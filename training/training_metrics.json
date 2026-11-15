@@ -1,0 +1,110 @@
+{
+  "status": "evaluated",
+  "distinct_workload_traces": 15,
+  "distinct_holdout_traces": 3,
+  "minimum_holdout_trace_groups": 2,
+  "minimum_traces_for_accuracy_claim": 5,
+  "raw_dataset_records": 396,
+  "records_missing_trace_id": 0,
+  "unique_trace_configuration_scenarios": 396,
+  "aggregated_repeated_records": 0,
+  "training_record_count": 315,
+  "test_record_count": 81,
+  "training_sample_count": 315,
+  "testing_sample_count": 81,
+  "training_distinct_trace_count": 12,
+  "test_distinct_trace_count": 3,
+  "training_distinct_configuration_count": 84,
+  "test_distinct_configuration_count": 50,
+  "evaluation_note": "Metrics are from traces held out by trace_id.",
+  "target_policy": {
+    "primary": "hit_rate",
+    "miss_rate": "derived as 1 - hit_rate; not trained independently",
+    "estimated_amat": "excluded until documented timing assumptions are available"
+  },
+  "targets": [
+    "hit_rate"
+  ],
+  "metrics": {
+    "hit_rate": {
+      "mae": 0.0028352222222220494,
+      "rmse": 0.005285768054106274,
+      "r2": 0.9987405616943443
+    }
+  },
+  "training_trace_ids": [
+    "10d923c78a320873542fbbc8e4ec8bdb770457fdf8003c774ec73498cf8add37",
+    "4a847a04413c28ea53414c6626fbee1a632c25d2478605755b87b6b9864a2248",
+    "5b550465ba342983b85a99370b51aa2e4fc36f2410af3f15218df431e57cc38a",
+    "6911daef84888a7a47fc79ca6d5069d401a3a166c44f2c8c620b42d3fcf1d9de",
+    "8c43a450491e3910c7749f2eacc0665f78df08a25581ee929bab31679d0e9864",
+    "b192078b8b65b83817632e5914015f856b80cd4324c49831b83aaebb5a9885ba",
+    "b510766700602b8ff4bd3e4d8ea5798db25e6f482fbf8fa341337df5b64a19e3",
+    "be77cc8f759632f20fea517a927a1fa78af47ded975edf5ef748a8ab6ec93491",
+    "c65129490cb40c89cc13cd341325323702e075f6d302cff28b07daedc025421a",
+    "d68344edeff614477ba7bddf25fbbe7df4af6e814afac38e66b1c7503292374d",
+    "f6b437a18843be8058b89d417a38f4c80550b28e98e0a7b37bc7f6008c9348a4",
+    "f8be3c882b1f92122e88c6aebd62e860ac6bdaf81dc13710c65716ee52c12b4d"
+  ],
+  "test_trace_ids": [
+    "05fdfcb5a994e37d52c4c7c5e53f61652e37ef6b949d26beba3820db17c2ee69",
+    "c5aea423b8476537dff08c930797b6f57639d11167aed54c6f03cdb7702a1f43",
+    "d5b3782760e451181ed761c18529a937e2b2c0919059eeac027a6ebb3c11e77e"
+  ],
+  "feature_importance": [
+    {
+      "feature": "categorical__workload_type_cnn",
+      "importance": 0.5384478026187179
+    },
+    {
+      "feature": "numeric__block_size_bytes",
+      "importance": 0.25913675522911
+    },
+    {
+      "feature": "numeric__cache_size_bytes",
+      "importance": 0.12039315831260686
+    },
+    {
+      "feature": "numeric__spatial_locality",
+      "importance": 0.029701485437420495
+    },
+    {
+      "feature": "numeric__temporal_locality",
+      "importance": 0.019629398989218356
+    },
+    {
+      "feature": "categorical__workload_type_transformer",
+      "importance": 0.016822631597151257
+    },
+    {
+      "feature": "categorical__workload_type_matmul",
+      "importance": 0.015018956153068667
+    },
+    {
+      "feature": "categorical__replacement_policy_LRU",
+      "importance": 0.0002835462960268904
+    },
+    {
+      "feature": "numeric__read_write_ratio",
+      "importance": 0.00020500634371069858
+    },
+    {
+      "feature": "numeric__associativity",
+      "importance": 0.0001626918428359817
+    },
+    {
+      "feature": "categorical__replacement_policy_RANDOM",
+      "importance": 0.00011133924891343048
+    },
+    {
+      "feature": "categorical__replacement_policy_FIFO",
+      "importance": 8.722793121946284e-05
+    },
+    {
+      "feature": "numeric__num_accesses",
+      "importance": 0.0
+    }
+  ],
+  "model_path": "C:\\Users\\mouny\\coa project\\models\\cache_optimizer.joblib",
+  "feature_importance_path": "C:\\Users\\mouny\\coa project\\training\\feature_importance.csv"
+}

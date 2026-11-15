@@ -1,0 +1,707 @@
+{
+  "status": "recommendation",
+  "objective": "hit_rate",
+  "limitation": "Configurations are ranked by predicted hit rate; miss rate is derived as 1 - hit rate. AMAT is not modeled.",
+  "hardware_constraints": {
+    "max_cache_size_bytes": null,
+    "max_associativity": null,
+    "resource_utilization": null
+  },
+  "workload_features": {
+    "workload_type": "transformer",
+    "read_write_ratio": 5.830601092896175,
+    "num_accesses": 10000,
+    "temporal_locality": 0.15759999999999996,
+    "spatial_locality": 0.6341634163416342,
+    "trace_id": "05fdfcb5a994e37d52c4c7c5e53f61652e37ef6b949d26beba3820db17c2ee69"
+  },
+  "ranking": [
+    {
+      "cache_size_bytes": 32768,
+      "associativity": 4,
+      "replacement_policy": "RANDOM",
+      "block_size_bytes": 128,
+      "predicted_hit_rate": 0.792214000000003,
+      "predicted_miss_rate": 0.20778599999999703
+    },
+    {
+      "cache_size_bytes": 32768,
+      "associativity": 2,
+      "replacement_policy": "RANDOM",
+      "block_size_bytes": 128,
+      "predicted_hit_rate": 0.7921593333333354,
+      "predicted_miss_rate": 0.20784066666666456
+    },
+    {
+      "cache_size_bytes": 32768,
+      "associativity": 4,
+      "replacement_policy": "LRU",
+      "block_size_bytes": 128,
+      "predicted_hit_rate": 0.7920646666666686,
+      "predicted_miss_rate": 0.20793533333333136
+    },
+    {
+      "cache_size_bytes": 32768,
+      "associativity": 4,
+      "replacement_policy": "FIFO",
+      "block_size_bytes": 128,
+      "predicted_hit_rate": 0.7920596666666685,
+      "predicted_miss_rate": 0.2079403333333315
+    },
+    {
+      "cache_size_bytes": 32768,
+      "associativity": 1,
+      "replacement_policy": "LRU",
+      "block_size_bytes": 128,
+      "predicted_hit_rate": 0.7920360000000016,
+      "predicted_miss_rate": 0.20796399999999837
+    },
+    {
+      "cache_size_bytes": 32768,
+      "associativity": 2,
+      "replacement_policy": "LRU",
+      "block_size_bytes": 128,
+      "predicted_hit_rate": 0.7920360000000016,
+      "predicted_miss_rate": 0.20796399999999837
+    },
+    {
+      "cache_size_bytes": 32768,
+      "associativity": 2,
+      "replacement_policy": "FIFO",
+      "block_size_bytes": 128,
+      "predicted_hit_rate": 0.7920323333333349,
+      "predicted_miss_rate": 0.2079676666666651
+    },
+    {
+      "cache_size_bytes": 8192,
+      "associativity": 4,
+      "replacement_policy": "RANDOM",
+      "block_size_bytes": 128,
+      "predicted_hit_rate": 0.7920263333333349,
+      "predicted_miss_rate": 0.20797366666666506
+    },
+    {
+      "cache_size_bytes": 16384,
+      "associativity": 4,
+      "replacement_policy": "RANDOM",
+      "block_size_bytes": 128,
+      "predicted_hit_rate": 0.7920263333333349,
+      "predicted_miss_rate": 0.20797366666666506
+    },
+    {
+      "cache_size_bytes": 4096,
+      "associativity": 4,
+      "replacement_policy": "RANDOM",
+      "block_size_bytes": 128,
+      "predicted_hit_rate": 0.7920260000000016,
+      "predicted_miss_rate": 0.20797399999999844
+    },
+    {
+      "cache_size_bytes": 8192,
+      "associativity": 2,
+      "replacement_policy": "RANDOM",
+      "block_size_bytes": 128,
+      "predicted_hit_rate": 0.7920233333333349,
+      "predicted_miss_rate": 0.20797666666666514
+    },
+    {
+      "cache_size_bytes": 16384,
+      "associativity": 2,
+      "replacement_policy": "RANDOM",
+      "block_size_bytes": 128,
+      "predicted_hit_rate": 0.7920233333333349,
+      "predicted_miss_rate": 0.20797666666666514
+    },
+    {
+      "cache_size_bytes": 4096,
+      "associativity": 2,
+      "replacement_policy": "RANDOM",
+      "block_size_bytes": 128,
+      "predicted_hit_rate": 0.7920230000000015,
+      "predicted_miss_rate": 0.20797699999999852
+    },
+    {
+      "cache_size_bytes": 8192,
+      "associativity": 4,
+      "replacement_policy": "LRU",
+      "block_size_bytes": 128,
+      "predicted_hit_rate": 0.7920030000000015,
+      "predicted_miss_rate": 0.20799699999999854
+    },
+    {
+      "cache_size_bytes": 8192,
+      "associativity": 4,
+      "replacement_policy": "FIFO",
+      "block_size_bytes": 128,
+      "predicted_hit_rate": 0.7920030000000015,
+      "predicted_miss_rate": 0.20799699999999854
+    },
+    {
+      "cache_size_bytes": 16384,
+      "associativity": 4,
+      "replacement_policy": "LRU",
+      "block_size_bytes": 128,
+      "predicted_hit_rate": 0.7920030000000015,
+      "predicted_miss_rate": 0.20799699999999854
+    },
+    {
+      "cache_size_bytes": 16384,
+      "associativity": 4,
+      "replacement_policy": "FIFO",
+      "block_size_bytes": 128,
+      "predicted_hit_rate": 0.7920030000000015,
+      "predicted_miss_rate": 0.20799699999999854
+    },
+    {
+      "cache_size_bytes": 4096,
+      "associativity": 4,
+      "replacement_policy": "LRU",
+      "block_size_bytes": 128,
+      "predicted_hit_rate": 0.7920026666666681,
+      "predicted_miss_rate": 0.20799733333333192
+    },
+    {
+      "cache_size_bytes": 4096,
+      "associativity": 4,
+      "replacement_policy": "FIFO",
+      "block_size_bytes": 128,
+      "predicted_hit_rate": 0.7920026666666681,
+      "predicted_miss_rate": 0.20799733333333192
+    },
+    {
+      "cache_size_bytes": 8192,
+      "associativity": 2,
+      "replacement_policy": "FIFO",
+      "block_size_bytes": 128,
+      "predicted_hit_rate": 0.7920013333333347,
+      "predicted_miss_rate": 0.20799866666666533
+    },
+    {
+      "cache_size_bytes": 16384,
+      "associativity": 2,
+      "replacement_policy": "FIFO",
+      "block_size_bytes": 128,
+      "predicted_hit_rate": 0.7920013333333347,
+      "predicted_miss_rate": 0.20799866666666533
+    },
+    {
+      "cache_size_bytes": 8192,
+      "associativity": 1,
+      "replacement_policy": "LRU",
+      "block_size_bytes": 128,
+      "predicted_hit_rate": 0.7920010000000014,
+      "predicted_miss_rate": 0.2079989999999986
+    },
+    {
+      "cache_size_bytes": 8192,
+      "associativity": 2,
+      "replacement_policy": "LRU",
+      "block_size_bytes": 128,
+      "predicted_hit_rate": 0.7920010000000014,
+      "predicted_miss_rate": 0.2079989999999986
+    },
+    {
+      "cache_size_bytes": 16384,
+      "associativity": 1,
+      "replacement_policy": "LRU",
+      "block_size_bytes": 128,
+      "predicted_hit_rate": 0.7920010000000014,
+      "predicted_miss_rate": 0.2079989999999986
+    },
+    {
+      "cache_size_bytes": 16384,
+      "associativity": 2,
+      "replacement_policy": "LRU",
+      "block_size_bytes": 128,
+      "predicted_hit_rate": 0.7920010000000014,
+      "predicted_miss_rate": 0.2079989999999986
+    },
+    {
+      "cache_size_bytes": 4096,
+      "associativity": 2,
+      "replacement_policy": "FIFO",
+      "block_size_bytes": 128,
+      "predicted_hit_rate": 0.7920010000000013,
+      "predicted_miss_rate": 0.2079989999999987
+    },
+    {
+      "cache_size_bytes": 4096,
+      "associativity": 1,
+      "replacement_policy": "LRU",
+      "block_size_bytes": 128,
+      "predicted_hit_rate": 0.7920006666666681,
+      "predicted_miss_rate": 0.20799933333333187
+    },
+    {
+      "cache_size_bytes": 4096,
+      "associativity": 2,
+      "replacement_policy": "LRU",
+      "block_size_bytes": 128,
+      "predicted_hit_rate": 0.7920006666666681,
+      "predicted_miss_rate": 0.20799933333333187
+    },
+    {
+      "cache_size_bytes": 16384,
+      "associativity": 2,
+      "replacement_policy": "RANDOM",
+      "block_size_bytes": 64,
+      "predicted_hit_rate": 0.5898466666666674,
+      "predicted_miss_rate": 0.4101533333333326
+    },
+    {
+      "cache_size_bytes": 16384,
+      "associativity": 4,
+      "replacement_policy": "RANDOM",
+      "block_size_bytes": 64,
+      "predicted_hit_rate": 0.5898410000000008,
+      "predicted_miss_rate": 0.41015899999999916
+    },
+    {
+      "cache_size_bytes": 16384,
+      "associativity": 1,
+      "replacement_policy": "LRU",
+      "block_size_bytes": 64,
+      "predicted_hit_rate": 0.5898306666666675,
+      "predicted_miss_rate": 0.4101693333333325
+    },
+    {
+      "cache_size_bytes": 16384,
+      "associativity": 2,
+      "replacement_policy": "LRU",
+      "block_size_bytes": 64,
+      "predicted_hit_rate": 0.5898220000000008,
+      "predicted_miss_rate": 0.41017799999999915
+    },
+    {
+      "cache_size_bytes": 16384,
+      "associativity": 2,
+      "replacement_policy": "FIFO",
+      "block_size_bytes": 64,
+      "predicted_hit_rate": 0.5898220000000007,
+      "predicted_miss_rate": 0.41017799999999927
+    },
+    {
+      "cache_size_bytes": 16384,
+      "associativity": 4,
+      "replacement_policy": "LRU",
+      "block_size_bytes": 64,
+      "predicted_hit_rate": 0.5898166666666675,
+      "predicted_miss_rate": 0.41018333333333246
+    },
+    {
+      "cache_size_bytes": 16384,
+      "associativity": 4,
+      "replacement_policy": "FIFO",
+      "block_size_bytes": 64,
+      "predicted_hit_rate": 0.5898110000000009,
+      "predicted_miss_rate": 0.41018899999999914
+    },
+    {
+      "cache_size_bytes": 32768,
+      "associativity": 2,
+      "replacement_policy": "RANDOM",
+      "block_size_bytes": 64,
+      "predicted_hit_rate": 0.5892600000000014,
+      "predicted_miss_rate": 0.41073999999999855
+    },
+    {
+      "cache_size_bytes": 32768,
+      "associativity": 4,
+      "replacement_policy": "RANDOM",
+      "block_size_bytes": 64,
+      "predicted_hit_rate": 0.5892520000000016,
+      "predicted_miss_rate": 0.41074799999999845
+    },
+    {
+      "cache_size_bytes": 32768,
+      "associativity": 2,
+      "replacement_policy": "LRU",
+      "block_size_bytes": 64,
+      "predicted_hit_rate": 0.5891363333333343,
+      "predicted_miss_rate": 0.41086366666666574
+    },
+    {
+      "cache_size_bytes": 32768,
+      "associativity": 2,
+      "replacement_policy": "FIFO",
+      "block_size_bytes": 64,
+      "predicted_hit_rate": 0.589131000000001,
+      "predicted_miss_rate": 0.41086899999999904
+    },
+    {
+      "cache_size_bytes": 32768,
+      "associativity": 4,
+      "replacement_policy": "LRU",
+      "block_size_bytes": 64,
+      "predicted_hit_rate": 0.589131000000001,
+      "predicted_miss_rate": 0.41086899999999904
+    },
+    {
+      "cache_size_bytes": 32768,
+      "associativity": 4,
+      "replacement_policy": "FIFO",
+      "block_size_bytes": 64,
+      "predicted_hit_rate": 0.5891256666666678,
+      "predicted_miss_rate": 0.41087433333333223
+    },
+    {
+      "cache_size_bytes": 8192,
+      "associativity": 1,
+      "replacement_policy": "LRU",
+      "block_size_bytes": 64,
+      "predicted_hit_rate": 0.5890980000000015,
+      "predicted_miss_rate": 0.41090199999999855
+    },
+    {
+      "cache_size_bytes": 8192,
+      "associativity": 2,
+      "replacement_policy": "LRU",
+      "block_size_bytes": 64,
+      "predicted_hit_rate": 0.5890980000000015,
+      "predicted_miss_rate": 0.41090199999999855
+    },
+    {
+      "cache_size_bytes": 8192,
+      "associativity": 2,
+      "replacement_policy": "FIFO",
+      "block_size_bytes": 64,
+      "predicted_hit_rate": 0.5890980000000015,
+      "predicted_miss_rate": 0.41090199999999855
+    },
+    {
+      "cache_size_bytes": 8192,
+      "associativity": 2,
+      "replacement_policy": "RANDOM",
+      "block_size_bytes": 64,
+      "predicted_hit_rate": 0.5890980000000015,
+      "predicted_miss_rate": 0.41090199999999855
+    },
+    {
+      "cache_size_bytes": 8192,
+      "associativity": 4,
+      "replacement_policy": "LRU",
+      "block_size_bytes": 64,
+      "predicted_hit_rate": 0.5890980000000015,
+      "predicted_miss_rate": 0.41090199999999855
+    },
+    {
+      "cache_size_bytes": 8192,
+      "associativity": 4,
+      "replacement_policy": "FIFO",
+      "block_size_bytes": 64,
+      "predicted_hit_rate": 0.5890980000000015,
+      "predicted_miss_rate": 0.41090199999999855
+    },
+    {
+      "cache_size_bytes": 8192,
+      "associativity": 4,
+      "replacement_policy": "RANDOM",
+      "block_size_bytes": 64,
+      "predicted_hit_rate": 0.5890980000000015,
+      "predicted_miss_rate": 0.41090199999999855
+    },
+    {
+      "cache_size_bytes": 4096,
+      "associativity": 1,
+      "replacement_policy": "LRU",
+      "block_size_bytes": 64,
+      "predicted_hit_rate": 0.5890963333333347,
+      "predicted_miss_rate": 0.41090366666666533
+    },
+    {
+      "cache_size_bytes": 4096,
+      "associativity": 2,
+      "replacement_policy": "LRU",
+      "block_size_bytes": 64,
+      "predicted_hit_rate": 0.5890963333333347,
+      "predicted_miss_rate": 0.41090366666666533
+    },
+    {
+      "cache_size_bytes": 4096,
+      "associativity": 2,
+      "replacement_policy": "RANDOM",
+      "block_size_bytes": 64,
+      "predicted_hit_rate": 0.5890963333333347,
+      "predicted_miss_rate": 0.41090366666666533
+    },
+    {
+      "cache_size_bytes": 4096,
+      "associativity": 2,
+      "replacement_policy": "FIFO",
+      "block_size_bytes": 64,
+      "predicted_hit_rate": 0.5890960000000014,
+      "predicted_miss_rate": 0.4109039999999986
+    },
+    {
+      "cache_size_bytes": 4096,
+      "associativity": 4,
+      "replacement_policy": "LRU",
+      "block_size_bytes": 64,
+      "predicted_hit_rate": 0.5890960000000014,
+      "predicted_miss_rate": 0.4109039999999986
+    },
+    {
+      "cache_size_bytes": 4096,
+      "associativity": 4,
+      "replacement_policy": "RANDOM",
+      "block_size_bytes": 64,
+      "predicted_hit_rate": 0.5890960000000014,
+      "predicted_miss_rate": 0.4109039999999986
+    },
+    {
+      "cache_size_bytes": 4096,
+      "associativity": 4,
+      "replacement_policy": "FIFO",
+      "block_size_bytes": 64,
+      "predicted_hit_rate": 0.589095666666668,
+      "predicted_miss_rate": 0.410904333333332
+    },
+    {
+      "cache_size_bytes": 32768,
+      "associativity": 1,
+      "replacement_policy": "LRU",
+      "block_size_bytes": 64,
+      "predicted_hit_rate": 0.5888906666666676,
+      "predicted_miss_rate": 0.41110933333333244
+    },
+    {
+      "cache_size_bytes": 32768,
+      "associativity": 1,
+      "replacement_policy": "LRU",
+      "block_size_bytes": 32,
+      "predicted_hit_rate": 0.5162809999999983,
+      "predicted_miss_rate": 0.4837190000000017
+    },
+    {
+      "cache_size_bytes": 32768,
+      "associativity": 2,
+      "replacement_policy": "RANDOM",
+      "block_size_bytes": 32,
+      "predicted_hit_rate": 0.5157343333333338,
+      "predicted_miss_rate": 0.48426566666666615
+    },
+    {
+      "cache_size_bytes": 32768,
+      "associativity": 4,
+      "replacement_policy": "RANDOM",
+      "block_size_bytes": 32,
+      "predicted_hit_rate": 0.5155583333333345,
+      "predicted_miss_rate": 0.48444166666666555
+    },
+    {
+      "cache_size_bytes": 32768,
+      "associativity": 2,
+      "replacement_policy": "LRU",
+      "block_size_bytes": 32,
+      "predicted_hit_rate": 0.5153043333333328,
+      "predicted_miss_rate": 0.4846956666666672
+    },
+    {
+      "cache_size_bytes": 32768,
+      "associativity": 2,
+      "replacement_policy": "FIFO",
+      "block_size_bytes": 32,
+      "predicted_hit_rate": 0.5151593333333335,
+      "predicted_miss_rate": 0.4848406666666665
+    },
+    {
+      "cache_size_bytes": 32768,
+      "associativity": 4,
+      "replacement_policy": "LRU",
+      "block_size_bytes": 32,
+      "predicted_hit_rate": 0.5150343333333335,
+      "predicted_miss_rate": 0.4849656666666665
+    },
+    {
+      "cache_size_bytes": 32768,
+      "associativity": 4,
+      "replacement_policy": "FIFO",
+      "block_size_bytes": 32,
+      "predicted_hit_rate": 0.5148673333333342,
+      "predicted_miss_rate": 0.48513266666666577
+    },
+    {
+      "cache_size_bytes": 16384,
+      "associativity": 1,
+      "replacement_policy": "LRU",
+      "block_size_bytes": 32,
+      "predicted_hit_rate": 0.514802333333333,
+      "predicted_miss_rate": 0.48519766666666697
+    },
+    {
+      "cache_size_bytes": 16384,
+      "associativity": 2,
+      "replacement_policy": "RANDOM",
+      "block_size_bytes": 32,
+      "predicted_hit_rate": 0.5143803333333336,
+      "predicted_miss_rate": 0.48561966666666645
+    },
+    {
+      "cache_size_bytes": 16384,
+      "associativity": 4,
+      "replacement_policy": "RANDOM",
+      "block_size_bytes": 32,
+      "predicted_hit_rate": 0.5143416666666667,
+      "predicted_miss_rate": 0.4856583333333333
+    },
+    {
+      "cache_size_bytes": 16384,
+      "associativity": 2,
+      "replacement_policy": "LRU",
+      "block_size_bytes": 32,
+      "predicted_hit_rate": 0.5143023333333336,
+      "predicted_miss_rate": 0.48569766666666636
+    },
+    {
+      "cache_size_bytes": 16384,
+      "associativity": 2,
+      "replacement_policy": "FIFO",
+      "block_size_bytes": 32,
+      "predicted_hit_rate": 0.514279666666667,
+      "predicted_miss_rate": 0.485720333333333
+    },
+    {
+      "cache_size_bytes": 16384,
+      "associativity": 4,
+      "replacement_policy": "LRU",
+      "block_size_bytes": 32,
+      "predicted_hit_rate": 0.5142496666666669,
+      "predicted_miss_rate": 0.48575033333333306
+    },
+    {
+      "cache_size_bytes": 8192,
+      "associativity": 2,
+      "replacement_policy": "LRU",
+      "block_size_bytes": 32,
+      "predicted_hit_rate": 0.5142410000000006,
+      "predicted_miss_rate": 0.4857589999999994
+    },
+    {
+      "cache_size_bytes": 8192,
+      "associativity": 2,
+      "replacement_policy": "FIFO",
+      "block_size_bytes": 32,
+      "predicted_hit_rate": 0.5142373333333338,
+      "predicted_miss_rate": 0.48576266666666623
+    },
+    {
+      "cache_size_bytes": 16384,
+      "associativity": 4,
+      "replacement_policy": "FIFO",
+      "block_size_bytes": 32,
+      "predicted_hit_rate": 0.5142323333333336,
+      "predicted_miss_rate": 0.4857676666666664
+    },
+    {
+      "cache_size_bytes": 4096,
+      "associativity": 4,
+      "replacement_policy": "RANDOM",
+      "block_size_bytes": 32,
+      "predicted_hit_rate": 0.5142140000000001,
+      "predicted_miss_rate": 0.48578599999999994
+    },
+    {
+      "cache_size_bytes": 8192,
+      "associativity": 1,
+      "replacement_policy": "LRU",
+      "block_size_bytes": 32,
+      "predicted_hit_rate": 0.5141990000000005,
+      "predicted_miss_rate": 0.4858009999999995
+    },
+    {
+      "cache_size_bytes": 4096,
+      "associativity": 4,
+      "replacement_policy": "LRU",
+      "block_size_bytes": 32,
+      "predicted_hit_rate": 0.5141983333333335,
+      "predicted_miss_rate": 0.48580166666666647
+    },
+    {
+      "cache_size_bytes": 4096,
+      "associativity": 2,
+      "replacement_policy": "RANDOM",
+      "block_size_bytes": 32,
+      "predicted_hit_rate": 0.5141950000000002,
+      "predicted_miss_rate": 0.4858049999999998
+    },
+    {
+      "cache_size_bytes": 4096,
+      "associativity": 4,
+      "replacement_policy": "FIFO",
+      "block_size_bytes": 32,
+      "predicted_hit_rate": 0.5141930000000001,
+      "predicted_miss_rate": 0.4858069999999999
+    },
+    {
+      "cache_size_bytes": 4096,
+      "associativity": 2,
+      "replacement_policy": "LRU",
+      "block_size_bytes": 32,
+      "predicted_hit_rate": 0.5141843333333337,
+      "predicted_miss_rate": 0.4858156666666663
+    },
+    {
+      "cache_size_bytes": 4096,
+      "associativity": 2,
+      "replacement_policy": "FIFO",
+      "block_size_bytes": 32,
+      "predicted_hit_rate": 0.5141773333333336,
+      "predicted_miss_rate": 0.4858226666666664
+    },
+    {
+      "cache_size_bytes": 8192,
+      "associativity": 2,
+      "replacement_policy": "RANDOM",
+      "block_size_bytes": 32,
+      "predicted_hit_rate": 0.5141416666666668,
+      "predicted_miss_rate": 0.48585833333333317
+    },
+    {
+      "cache_size_bytes": 4096,
+      "associativity": 1,
+      "replacement_policy": "LRU",
+      "block_size_bytes": 32,
+      "predicted_hit_rate": 0.5140940000000003,
+      "predicted_miss_rate": 0.4859059999999997
+    },
+    {
+      "cache_size_bytes": 8192,
+      "associativity": 4,
+      "replacement_policy": "LRU",
+      "block_size_bytes": 32,
+      "predicted_hit_rate": 0.513961000000001,
+      "predicted_miss_rate": 0.486038999999999
+    },
+    {
+      "cache_size_bytes": 8192,
+      "associativity": 4,
+      "replacement_policy": "RANDOM",
+      "block_size_bytes": 32,
+      "predicted_hit_rate": 0.5139606666666671,
+      "predicted_miss_rate": 0.48603933333333293
+    },
+    {
+      "cache_size_bytes": 8192,
+      "associativity": 4,
+      "replacement_policy": "FIFO",
+      "block_size_bytes": 32,
+      "predicted_hit_rate": 0.5139503333333343,
+      "predicted_miss_rate": 0.4860496666666657
+    }
+  ],
+  "recommendation": {
+    "cache_size_bytes": 32768,
+    "associativity": 4,
+    "replacement_policy": "RANDOM",
+    "block_size_bytes": 128,
+    "predicted_hit_rate": 0.792214000000003,
+    "predicted_miss_rate": 0.20778599999999703
+  },
+  "vivado_plusargs": {
+    "CACHE_SIZE": 32768,
+    "ASSOCIATIVITY": 4,
+    "BLOCK_SIZE": 128,
+    "REPLACEMENT_POLICY": "RANDOM"
+  },
+  "config_file": "reports\\transformer_10000_seed42_recommendation.cfg"
+}

@@ -1,0 +1,103 @@
+{
+  "status": "complete",
+  "source_record_count": 525,
+  "included_validated_records": 396,
+  "excluded_record_count": 32,
+  "excluded_by_reason": {
+    "not_in_plan": 31,
+    "unsuccessful": 1
+  },
+  "distinct_trace_count": 15,
+  "distinct_configuration_count": 84,
+  "distinct_trace_configuration_count": 396,
+  "exact_duplicate_groups": [],
+  "exact_duplicate_extra_rows": 0,
+  "repeated_trace_configuration_groups": [],
+  "repeated_experiment_extra_rows": 0,
+  "missing_values_by_column": {
+    "estimated_amat": 396
+  },
+  "distributions": {
+    "workload_type": {
+      "cnn": 132,
+      "transformer": 132,
+      "matmul": 132
+    },
+    "cache_size_bytes": {
+      "4096": 99,
+      "8192": 99,
+      "16384": 99,
+      "32768": 99
+    },
+    "associativity": {
+      "2": 156,
+      "4": 156,
+      "1": 84
+    },
+    "block_size_bytes": {
+      "128": 132,
+      "64": 132,
+      "32": 132
+    },
+    "replacement_policy": {
+      "LRU": 180,
+      "RANDOM": 108,
+      "FIFO": 108
+    }
+  },
+  "count_consistency": {
+    "valid_rows": 396,
+    "invalid_rows": 0,
+    "checks": [
+      "expected_access_count equals access_count",
+      "hit_count plus miss_count equals access_count",
+      "hit_rate and miss_rate agree with measured counts"
+    ]
+  },
+  "schema_version": 1,
+  "plan_id": "6c753f966dd564b8e2e27d0b2a6e935ee4f3404d506ac635843401b2e6bc4205",
+  "plan_file": "C:\\Users\\mouny\\coa project\\reports\\balanced_training_plan.json",
+  "planned_assignment_count": 396,
+  "prepared_scenario_count": 396,
+  "matching_result_record_count": 494,
+  "accepted_source_run_count": 493,
+  "legacy_source_run_count": 493,
+  "source_run_count_distribution": {
+    "1": 299,
+    "2": 97
+  },
+  "workload_scenario_counts": {
+    "cnn": 132,
+    "transformer": 132,
+    "matmul": 132
+  },
+  "accesses_per_run": 10000,
+  "aggregation": {
+    "scenario_key": [
+      "trace_id",
+      "cache_size_bytes",
+      "associativity",
+      "block_size_bytes",
+      "replacement_policy"
+    ],
+    "pooled_counters": [
+      "hit_count",
+      "miss_count",
+      "access_count"
+    ],
+    "rates": "recalculated from pooled counters",
+    "num_accesses_feature": "retained as accesses per source run",
+    "source_run_count_is_model_feature": false
+  },
+  "plan_id_provenance": {
+    "explicit_plan_id_runs": 0,
+    "legacy_exact_key_match_runs": 493
+  },
+  "counter_consistency": {
+    "valid_scenarios": 396,
+    "invalid_scenarios": 0,
+    "each_source_run_accesses": 10000,
+    "pooled_expected_actual_access_counts_match": true,
+    "hit_plus_miss_equals_pooled_access_count": true
+  }
+}

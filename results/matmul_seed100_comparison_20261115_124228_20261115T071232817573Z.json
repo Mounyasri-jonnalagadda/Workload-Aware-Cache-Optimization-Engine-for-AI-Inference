@@ -1,0 +1,37 @@
+{
+  "status": "complete",
+  "comparison_valid": true,
+  "improvement_claimed": true,
+  "trace_id": "b510766700602b8ff4bd3e4d8ea5798db25e6f482fbf8fa341337df5b64a19e3",
+  "trace_hash": "81279d941dcd7bb55040e7ebf9fe51c0c20dc44126e36414566993b56ea98a31",
+  "expected_access_count": 10000,
+  "baseline_configuration": {
+    "cache_size_bytes": 8192,
+    "associativity": 1,
+    "replacement_policy": "LRU",
+    "block_size_bytes": 64
+  },
+  "recommended_configuration": {
+    "cache_size_bytes": 32768,
+    "associativity": 4,
+    "replacement_policy": "FIFO",
+    "block_size_bytes": 128
+  },
+  "baseline_actual_hit_rate": 0.5797,
+  "recommended_actual_hit_rate": 0.7737,
+  "predicted_recommended_hit_rate": 0.776536666666668,
+  "absolute_hit_rate_improvement": 0.19400000000000006,
+  "absolute_hit_rate_improvement_percentage_points": 19.400000000000006,
+  "relative_hit_rate_improvement_percentage": 33.465585647748846,
+  "baseline_actual_miss_rate": 0.4203,
+  "recommended_actual_miss_rate": 0.2263,
+  "miss_rate_reduction": 0.194,
+  "relative_miss_rate_reduction_percentage": 46.15750654294551,
+  "recommended_prediction_error_hit_rate": 0.0028366666666679308,
+  "baseline_validation_errors": "",
+  "recommended_validation_errors": "",
+  "baseline_run_id": "20261115T071232961300Z",
+  "recommended_run_id": "20261115T071240649328Z",
+  "model_path": "models\\cache_optimizer.joblib",
+  "measurement_source": "vivado_xsim"
+}

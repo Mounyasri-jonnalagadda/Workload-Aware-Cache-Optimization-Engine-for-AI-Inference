@@ -1,0 +1,5246 @@
+{
+  "plan_id": "6c753f966dd564b8e2e27d0b2a6e935ee4f3404d506ac635843401b2e6bc4205",
+  "schema_version": 1,
+  "design": "balanced-396",
+  "accesses": 10000,
+  "seeds": [
+    42,
+    100,
+    200,
+    300,
+    400
+  ],
+  "design_seed": 42,
+  "workload_types": [
+    "cnn",
+    "transformer",
+    "matmul"
+  ],
+  "candidate_configuration_count": 84,
+  "anchor_configuration_count": 12,
+  "expected_simulation_count": 396,
+  "workload_trace_count": 15,
+  "workload_distribution": {
+    "cnn": 132,
+    "transformer": 132,
+    "matmul": 132
+  },
+  "runs_per_workload_seed": {
+    "cnn:42": 27,
+    "cnn:100": 27,
+    "cnn:200": 26,
+    "cnn:300": 26,
+    "cnn:400": 26,
+    "transformer:42": 27,
+    "transformer:100": 27,
+    "transformer:200": 26,
+    "transformer:300": 26,
+    "transformer:400": 26,
+    "matmul:42": 27,
+    "matmul:100": 27,
+    "matmul:200": 26,
+    "matmul:300": 26,
+    "matmul:400": 26
+  },
+  "configuration_run_distribution": [
+    {
+      "cache_size_bytes": 4096,
+      "associativity": 1,
+      "block_size_bytes": 32,
+      "replacement_policy": "LRU",
+      "run_count": 3
+    },
+    {
+      "cache_size_bytes": 4096,
+      "associativity": 1,
+      "block_size_bytes": 64,
+      "replacement_policy": "LRU",
+      "run_count": 3
+    },
+    {
+      "cache_size_bytes": 4096,
+      "associativity": 1,
+      "block_size_bytes": 128,
+      "replacement_policy": "LRU",
+      "run_count": 15
+    },
+    {
+      "cache_size_bytes": 4096,
+      "associativity": 2,
+      "block_size_bytes": 32,
+      "replacement_policy": "FIFO",
+      "run_count": 3
+    },
+    {
+      "cache_size_bytes": 4096,
+      "associativity": 2,
+      "block_size_bytes": 32,
+      "replacement_policy": "LRU",
+      "run_count": 3
+    },
+    {
+      "cache_size_bytes": 4096,
+      "associativity": 2,
+      "block_size_bytes": 32,
+      "replacement_policy": "RANDOM",
+      "run_count": 3
+    },
+    {
+      "cache_size_bytes": 4096,
+      "associativity": 2,
+      "block_size_bytes": 64,
+      "replacement_policy": "FIFO",
+      "run_count": 3
+    },
+    {
+      "cache_size_bytes": 4096,
+      "associativity": 2,
+      "block_size_bytes": 64,
+      "replacement_policy": "LRU",
+      "run_count": 3
+    },
+    {
+      "cache_size_bytes": 4096,
+      "associativity": 2,
+      "block_size_bytes": 64,
+      "replacement_policy": "RANDOM",
+      "run_count": 15
+    },
+    {
+      "cache_size_bytes": 4096,
+      "associativity": 2,
+      "block_size_bytes": 128,
+      "replacement_policy": "FIFO",
+      "run_count": 3
+    },
+    {
+      "cache_size_bytes": 4096,
+      "associativity": 2,
+      "block_size_bytes": 128,
+      "replacement_policy": "LRU",
+      "run_count": 3
+    },
+    {
+      "cache_size_bytes": 4096,
+      "associativity": 2,
+      "block_size_bytes": 128,
+      "replacement_policy": "RANDOM",
+      "run_count": 3
+    },
+    {
+      "cache_size_bytes": 4096,
+      "associativity": 4,
+      "block_size_bytes": 32,
+      "replacement_policy": "FIFO",
+      "run_count": 3
+    },
+    {
+      "cache_size_bytes": 4096,
+      "associativity": 4,
+      "block_size_bytes": 32,
+      "replacement_policy": "LRU",
+      "run_count": 15
+    },
+    {
+      "cache_size_bytes": 4096,
+      "associativity": 4,
+      "block_size_bytes": 32,
+      "replacement_policy": "RANDOM",
+      "run_count": 3
+    },
+    {
+      "cache_size_bytes": 4096,
+      "associativity": 4,
+      "block_size_bytes": 64,
+      "replacement_policy": "FIFO",
+      "run_count": 3
+    },
+    {
+      "cache_size_bytes": 4096,
+      "associativity": 4,
+      "block_size_bytes": 64,
+      "replacement_policy": "LRU",
+      "run_count": 3
+    },
+    {
+      "cache_size_bytes": 4096,
+      "associativity": 4,
+      "block_size_bytes": 64,
+      "replacement_policy": "RANDOM",
+      "run_count": 3
+    },
+    {
+      "cache_size_bytes": 4096,
+      "associativity": 4,
+      "block_size_bytes": 128,
+      "replacement_policy": "FIFO",
+      "run_count": 3
+    },
+    {
+      "cache_size_bytes": 4096,
+      "associativity": 4,
+      "block_size_bytes": 128,
+      "replacement_policy": "LRU",
+      "run_count": 3
+    },
+    {
+      "cache_size_bytes": 4096,
+      "associativity": 4,
+      "block_size_bytes": 128,
+      "replacement_policy": "RANDOM",
+      "run_count": 3
+    },
+    {
+      "cache_size_bytes": 8192,
+      "associativity": 1,
+      "block_size_bytes": 32,
+      "replacement_policy": "LRU",
+      "run_count": 3
+    },
+    {
+      "cache_size_bytes": 8192,
+      "associativity": 1,
+      "block_size_bytes": 64,
+      "replacement_policy": "LRU",
+      "run_count": 15
+    },
+    {
+      "cache_size_bytes": 8192,
+      "associativity": 1,
+      "block_size_bytes": 128,
+      "replacement_policy": "LRU",
+      "run_count": 3
+    },
+    {
+      "cache_size_bytes": 8192,
+      "associativity": 2,
+      "block_size_bytes": 32,
+      "replacement_policy": "FIFO",
+      "run_count": 15
+    },
+    {
+      "cache_size_bytes": 8192,
+      "associativity": 2,
+      "block_size_bytes": 32,
+      "replacement_policy": "LRU",
+      "run_count": 3
+    },
+    {
+      "cache_size_bytes": 8192,
+      "associativity": 2,
+      "block_size_bytes": 32,
+      "replacement_policy": "RANDOM",
+      "run_count": 3
+    },
+    {
+      "cache_size_bytes": 8192,
+      "associativity": 2,
+      "block_size_bytes": 64,
+      "replacement_policy": "FIFO",
+      "run_count": 3
+    },
+    {
+      "cache_size_bytes": 8192,
+      "associativity": 2,
+      "block_size_bytes": 64,
+      "replacement_policy": "LRU",
+      "run_count": 3
+    },
+    {
+      "cache_size_bytes": 8192,
+      "associativity": 2,
+      "block_size_bytes": 64,
+      "replacement_policy": "RANDOM",
+      "run_count": 3
+    },
+    {
+      "cache_size_bytes": 8192,
+      "associativity": 2,
+      "block_size_bytes": 128,
+      "replacement_policy": "FIFO",
+      "run_count": 3
+    },
+    {
+      "cache_size_bytes": 8192,
+      "associativity": 2,
+      "block_size_bytes": 128,
+      "replacement_policy": "LRU",
+      "run_count": 3
+    },
+    {
+      "cache_size_bytes": 8192,
+      "associativity": 2,
+      "block_size_bytes": 128,
+      "replacement_policy": "RANDOM",
+      "run_count": 3
+    },
+    {
+      "cache_size_bytes": 8192,
+      "associativity": 4,
+      "block_size_bytes": 32,
+      "replacement_policy": "FIFO",
+      "run_count": 3
+    },
+    {
+      "cache_size_bytes": 8192,
+      "associativity": 4,
+      "block_size_bytes": 32,
+      "replacement_policy": "LRU",
+      "run_count": 3
+    },
+    {
+      "cache_size_bytes": 8192,
+      "associativity": 4,
+      "block_size_bytes": 32,
+      "replacement_policy": "RANDOM",
+      "run_count": 3
+    },
+    {
+      "cache_size_bytes": 8192,
+      "associativity": 4,
+      "block_size_bytes": 64,
+      "replacement_policy": "FIFO",
+      "run_count": 3
+    },
+    {
+      "cache_size_bytes": 8192,
+      "associativity": 4,
+      "block_size_bytes": 64,
+      "replacement_policy": "LRU",
+      "run_count": 3
+    },
+    {
+      "cache_size_bytes": 8192,
+      "associativity": 4,
+      "block_size_bytes": 64,
+      "replacement_policy": "RANDOM",
+      "run_count": 3
+    },
+    {
+      "cache_size_bytes": 8192,
+      "associativity": 4,
+      "block_size_bytes": 128,
+      "replacement_policy": "FIFO",
+      "run_count": 3
+    },
+    {
+      "cache_size_bytes": 8192,
+      "associativity": 4,
+      "block_size_bytes": 128,
+      "replacement_policy": "LRU",
+      "run_count": 3
+    },
+    {
+      "cache_size_bytes": 8192,
+      "associativity": 4,
+      "block_size_bytes": 128,
+      "replacement_policy": "RANDOM",
+      "run_count": 15
+    },
+    {
+      "cache_size_bytes": 16384,
+      "associativity": 1,
+      "block_size_bytes": 32,
+      "replacement_policy": "LRU",
+      "run_count": 3
+    },
+    {
+      "cache_size_bytes": 16384,
+      "associativity": 1,
+      "block_size_bytes": 64,
+      "replacement_policy": "LRU",
+      "run_count": 15
+    },
+    {
+      "cache_size_bytes": 16384,
+      "associativity": 1,
+      "block_size_bytes": 128,
+      "replacement_policy": "LRU",
+      "run_count": 3
+    },
+    {
+      "cache_size_bytes": 16384,
+      "associativity": 2,
+      "block_size_bytes": 32,
+      "replacement_policy": "FIFO",
+      "run_count": 3
+    },
+    {
+      "cache_size_bytes": 16384,
+      "associativity": 2,
+      "block_size_bytes": 32,
+      "replacement_policy": "LRU",
+      "run_count": 3
+    },
+    {
+      "cache_size_bytes": 16384,
+      "associativity": 2,
+      "block_size_bytes": 32,
+      "replacement_policy": "RANDOM",
+      "run_count": 3
+    },
+    {
+      "cache_size_bytes": 16384,
+      "associativity": 2,
+      "block_size_bytes": 64,
+      "replacement_policy": "FIFO",
+      "run_count": 3
+    },
+    {
+      "cache_size_bytes": 16384,
+      "associativity": 2,
+      "block_size_bytes": 64,
+      "replacement_policy": "LRU",
+      "run_count": 3
+    },
+    {
+      "cache_size_bytes": 16384,
+      "associativity": 2,
+      "block_size_bytes": 64,
+      "replacement_policy": "RANDOM",
+      "run_count": 3
+    },
+    {
+      "cache_size_bytes": 16384,
+      "associativity": 2,
+      "block_size_bytes": 128,
+      "replacement_policy": "FIFO",
+      "run_count": 15
+    },
+    {
+      "cache_size_bytes": 16384,
+      "associativity": 2,
+      "block_size_bytes": 128,
+      "replacement_policy": "LRU",
+      "run_count": 3
+    },
+    {
+      "cache_size_bytes": 16384,
+      "associativity": 2,
+      "block_size_bytes": 128,
+      "replacement_policy": "RANDOM",
+      "run_count": 3
+    },
+    {
+      "cache_size_bytes": 16384,
+      "associativity": 4,
+      "block_size_bytes": 32,
+      "replacement_policy": "FIFO",
+      "run_count": 3
+    },
+    {
+      "cache_size_bytes": 16384,
+      "associativity": 4,
+      "block_size_bytes": 32,
+      "replacement_policy": "LRU",
+      "run_count": 3
+    },
+    {
+      "cache_size_bytes": 16384,
+      "associativity": 4,
+      "block_size_bytes": 32,
+      "replacement_policy": "RANDOM",
+      "run_count": 15
+    },
+    {
+      "cache_size_bytes": 16384,
+      "associativity": 4,
+      "block_size_bytes": 64,
+      "replacement_policy": "FIFO",
+      "run_count": 3
+    },
+    {
+      "cache_size_bytes": 16384,
+      "associativity": 4,
+      "block_size_bytes": 64,
+      "replacement_policy": "LRU",
+      "run_count": 3
+    },
+    {
+      "cache_size_bytes": 16384,
+      "associativity": 4,
+      "block_size_bytes": 64,
+      "replacement_policy": "RANDOM",
+      "run_count": 3
+    },
+    {
+      "cache_size_bytes": 16384,
+      "associativity": 4,
+      "block_size_bytes": 128,
+      "replacement_policy": "FIFO",
+      "run_count": 3
+    },
+    {
+      "cache_size_bytes": 16384,
+      "associativity": 4,
+      "block_size_bytes": 128,
+      "replacement_policy": "LRU",
+      "run_count": 3
+    },
+    {
+      "cache_size_bytes": 16384,
+      "associativity": 4,
+      "block_size_bytes": 128,
+      "replacement_policy": "RANDOM",
+      "run_count": 3
+    },
+    {
+      "cache_size_bytes": 32768,
+      "associativity": 1,
+      "block_size_bytes": 32,
+      "replacement_policy": "LRU",
+      "run_count": 15
+    },
+    {
+      "cache_size_bytes": 32768,
+      "associativity": 1,
+      "block_size_bytes": 64,
+      "replacement_policy": "LRU",
+      "run_count": 3
+    },
+    {
+      "cache_size_bytes": 32768,
+      "associativity": 1,
+      "block_size_bytes": 128,
+      "replacement_policy": "LRU",
+      "run_count": 3
+    },
+    {
+      "cache_size_bytes": 32768,
+      "associativity": 2,
+      "block_size_bytes": 32,
+      "replacement_policy": "FIFO",
+      "run_count": 3
+    },
+    {
+      "cache_size_bytes": 32768,
+      "associativity": 2,
+      "block_size_bytes": 32,
+      "replacement_policy": "LRU",
+      "run_count": 3
+    },
+    {
+      "cache_size_bytes": 32768,
+      "associativity": 2,
+      "block_size_bytes": 32,
+      "replacement_policy": "RANDOM",
+      "run_count": 3
+    },
+    {
+      "cache_size_bytes": 32768,
+      "associativity": 2,
+      "block_size_bytes": 64,
+      "replacement_policy": "FIFO",
+      "run_count": 3
+    },
+    {
+      "cache_size_bytes": 32768,
+      "associativity": 2,
+      "block_size_bytes": 64,
+      "replacement_policy": "LRU",
+      "run_count": 3
+    },
+    {
+      "cache_size_bytes": 32768,
+      "associativity": 2,
+      "block_size_bytes": 64,
+      "replacement_policy": "RANDOM",
+      "run_count": 3
+    },
+    {
+      "cache_size_bytes": 32768,
+      "associativity": 2,
+      "block_size_bytes": 128,
+      "replacement_policy": "FIFO",
+      "run_count": 3
+    },
+    {
+      "cache_size_bytes": 32768,
+      "associativity": 2,
+      "block_size_bytes": 128,
+      "replacement_policy": "LRU",
+      "run_count": 15
+    },
+    {
+      "cache_size_bytes": 32768,
+      "associativity": 2,
+      "block_size_bytes": 128,
+      "replacement_policy": "RANDOM",
+      "run_count": 3
+    },
+    {
+      "cache_size_bytes": 32768,
+      "associativity": 4,
+      "block_size_bytes": 32,
+      "replacement_policy": "FIFO",
+      "run_count": 3
+    },
+    {
+      "cache_size_bytes": 32768,
+      "associativity": 4,
+      "block_size_bytes": 32,
+      "replacement_policy": "LRU",
+      "run_count": 3
+    },
+    {
+      "cache_size_bytes": 32768,
+      "associativity": 4,
+      "block_size_bytes": 32,
+      "replacement_policy": "RANDOM",
+      "run_count": 3
+    },
+    {
+      "cache_size_bytes": 32768,
+      "associativity": 4,
+      "block_size_bytes": 64,
+      "replacement_policy": "FIFO",
+      "run_count": 15
+    },
+    {
+      "cache_size_bytes": 32768,
+      "associativity": 4,
+      "block_size_bytes": 64,
+      "replacement_policy": "LRU",
+      "run_count": 3
+    },
+    {
+      "cache_size_bytes": 32768,
+      "associativity": 4,
+      "block_size_bytes": 64,
+      "replacement_policy": "RANDOM",
+      "run_count": 3
+    },
+    {
+      "cache_size_bytes": 32768,
+      "associativity": 4,
+      "block_size_bytes": 128,
+      "replacement_policy": "FIFO",
+      "run_count": 3
+    },
+    {
+      "cache_size_bytes": 32768,
+      "associativity": 4,
+      "block_size_bytes": 128,
+      "replacement_policy": "LRU",
+      "run_count": 3
+    },
+    {
+      "cache_size_bytes": 32768,
+      "associativity": 4,
+      "block_size_bytes": 128,
+      "replacement_policy": "RANDOM",
+      "run_count": 3
+    }
+  ],
+  "anchors": [
+    {
+      "cache_size_bytes": 4096,
+      "associativity": 1,
+      "replacement_policy": "LRU",
+      "block_size_bytes": 128
+    },
+    {
+      "cache_size_bytes": 4096,
+      "associativity": 2,
+      "replacement_policy": "RANDOM",
+      "block_size_bytes": 64
+    },
+    {
+      "cache_size_bytes": 4096,
+      "associativity": 4,
+      "replacement_policy": "LRU",
+      "block_size_bytes": 32
+    },
+    {
+      "cache_size_bytes": 8192,
+      "associativity": 1,
+      "replacement_policy": "LRU",
+      "block_size_bytes": 64
+    },
+    {
+      "cache_size_bytes": 8192,
+      "associativity": 2,
+      "replacement_policy": "FIFO",
+      "block_size_bytes": 32
+    },
+    {
+      "cache_size_bytes": 8192,
+      "associativity": 4,
+      "replacement_policy": "RANDOM",
+      "block_size_bytes": 128
+    },
+    {
+      "cache_size_bytes": 16384,
+      "associativity": 1,
+      "replacement_policy": "LRU",
+      "block_size_bytes": 64
+    },
+    {
+      "cache_size_bytes": 16384,
+      "associativity": 2,
+      "replacement_policy": "FIFO",
+      "block_size_bytes": 128
+    },
+    {
+      "cache_size_bytes": 16384,
+      "associativity": 4,
+      "replacement_policy": "RANDOM",
+      "block_size_bytes": 32
+    },
+    {
+      "cache_size_bytes": 32768,
+      "associativity": 1,
+      "replacement_policy": "LRU",
+      "block_size_bytes": 32
+    },
+    {
+      "cache_size_bytes": 32768,
+      "associativity": 2,
+      "replacement_policy": "LRU",
+      "block_size_bytes": 128
+    },
+    {
+      "cache_size_bytes": 32768,
+      "associativity": 4,
+      "replacement_policy": "FIFO",
+      "block_size_bytes": 64
+    }
+  ],
+  "anchor_pairwise_coverage": {
+    "covered_pair_count": 59,
+    "legal_pair_count": 61,
+    "pair_reports": [
+      {
+        "parameters": [
+          "cache_size_bytes",
+          "associativity"
+        ],
+        "covered_pair_count": 12,
+        "legal_pair_count": 12,
+        "uncovered_pairs": []
+      },
+      {
+        "parameters": [
+          "cache_size_bytes",
+          "block_size_bytes"
+        ],
+        "covered_pair_count": 12,
+        "legal_pair_count": 12,
+        "uncovered_pairs": []
+      },
+      {
+        "parameters": [
+          "cache_size_bytes",
+          "replacement_policy"
+        ],
+        "covered_pair_count": 10,
+        "legal_pair_count": 12,
+        "uncovered_pairs": [
+          {
+            "cache_size_bytes": 32768,
+            "replacement_policy": "RANDOM"
+          },
+          {
+            "cache_size_bytes": 4096,
+            "replacement_policy": "FIFO"
+          }
+        ]
+      },
+      {
+        "parameters": [
+          "associativity",
+          "block_size_bytes"
+        ],
+        "covered_pair_count": 9,
+        "legal_pair_count": 9,
+        "uncovered_pairs": []
+      },
+      {
+        "parameters": [
+          "associativity",
+          "replacement_policy"
+        ],
+        "covered_pair_count": 7,
+        "legal_pair_count": 7,
+        "uncovered_pairs": []
+      },
+      {
+        "parameters": [
+          "block_size_bytes",
+          "replacement_policy"
+        ],
+        "covered_pair_count": 9,
+        "legal_pair_count": 9,
+        "uncovered_pairs": []
+      }
+    ],
+    "uncovered_pairs": [
+      {
+        "parameters": [
+          "cache_size_bytes",
+          "replacement_policy"
+        ],
+        "cache_size_bytes": 32768,
+        "replacement_policy": "RANDOM"
+      },
+      {
+        "parameters": [
+          "cache_size_bytes",
+          "replacement_policy"
+        ],
+        "cache_size_bytes": 4096,
+        "replacement_policy": "FIFO"
+      }
+    ]
+  },
+  "traces": [
+    {
+      "workload_type": "cnn",
+      "seed": 42,
+      "trace_id": "d5b3782760e451181ed761c18529a937e2b2c0919059eeac027a6ebb3c11e77e",
+      "num_accesses": 10000
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 100,
+      "trace_id": "c5aea423b8476537dff08c930797b6f57639d11167aed54c6f03cdb7702a1f43",
+      "num_accesses": 10000
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 200,
+      "trace_id": "4a847a04413c28ea53414c6626fbee1a632c25d2478605755b87b6b9864a2248",
+      "num_accesses": 10000
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 300,
+      "trace_id": "f6b437a18843be8058b89d417a38f4c80550b28e98e0a7b37bc7f6008c9348a4",
+      "num_accesses": 10000
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 400,
+      "trace_id": "10d923c78a320873542fbbc8e4ec8bdb770457fdf8003c774ec73498cf8add37",
+      "num_accesses": 10000
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 42,
+      "trace_id": "05fdfcb5a994e37d52c4c7c5e53f61652e37ef6b949d26beba3820db17c2ee69",
+      "num_accesses": 10000
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 100,
+      "trace_id": "b192078b8b65b83817632e5914015f856b80cd4324c49831b83aaebb5a9885ba",
+      "num_accesses": 10000
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 200,
+      "trace_id": "8c43a450491e3910c7749f2eacc0665f78df08a25581ee929bab31679d0e9864",
+      "num_accesses": 10000
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 300,
+      "trace_id": "5b550465ba342983b85a99370b51aa2e4fc36f2410af3f15218df431e57cc38a",
+      "num_accesses": 10000
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 400,
+      "trace_id": "c65129490cb40c89cc13cd341325323702e075f6d302cff28b07daedc025421a",
+      "num_accesses": 10000
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 42,
+      "trace_id": "f8be3c882b1f92122e88c6aebd62e860ac6bdaf81dc13710c65716ee52c12b4d",
+      "num_accesses": 10000
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 100,
+      "trace_id": "b510766700602b8ff4bd3e4d8ea5798db25e6f482fbf8fa341337df5b64a19e3",
+      "num_accesses": 10000
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 200,
+      "trace_id": "be77cc8f759632f20fea517a927a1fa78af47ded975edf5ef748a8ab6ec93491",
+      "num_accesses": 10000
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 300,
+      "trace_id": "6911daef84888a7a47fc79ca6d5069d401a3a166c44f2c8c620b42d3fcf1d9de",
+      "num_accesses": 10000
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 400,
+      "trace_id": "d68344edeff614477ba7bddf25fbbe7df4af6e814afac38e66b1c7503292374d",
+      "num_accesses": 10000
+    }
+  ],
+  "experiments": [
+    {
+      "workload_type": "cnn",
+      "seed": 42,
+      "trace_id": "d5b3782760e451181ed761c18529a937e2b2c0919059eeac027a6ebb3c11e77e",
+      "cache_config": {
+        "cache_size_bytes": 4096,
+        "associativity": 1,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 42,
+      "trace_id": "d5b3782760e451181ed761c18529a937e2b2c0919059eeac027a6ebb3c11e77e",
+      "cache_config": {
+        "cache_size_bytes": 4096,
+        "associativity": 2,
+        "replacement_policy": "RANDOM",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 42,
+      "trace_id": "d5b3782760e451181ed761c18529a937e2b2c0919059eeac027a6ebb3c11e77e",
+      "cache_config": {
+        "cache_size_bytes": 4096,
+        "associativity": 4,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 42,
+      "trace_id": "d5b3782760e451181ed761c18529a937e2b2c0919059eeac027a6ebb3c11e77e",
+      "cache_config": {
+        "cache_size_bytes": 8192,
+        "associativity": 1,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 42,
+      "trace_id": "d5b3782760e451181ed761c18529a937e2b2c0919059eeac027a6ebb3c11e77e",
+      "cache_config": {
+        "cache_size_bytes": 8192,
+        "associativity": 2,
+        "replacement_policy": "FIFO",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 42,
+      "trace_id": "d5b3782760e451181ed761c18529a937e2b2c0919059eeac027a6ebb3c11e77e",
+      "cache_config": {
+        "cache_size_bytes": 8192,
+        "associativity": 4,
+        "replacement_policy": "RANDOM",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 42,
+      "trace_id": "d5b3782760e451181ed761c18529a937e2b2c0919059eeac027a6ebb3c11e77e",
+      "cache_config": {
+        "cache_size_bytes": 16384,
+        "associativity": 1,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 42,
+      "trace_id": "d5b3782760e451181ed761c18529a937e2b2c0919059eeac027a6ebb3c11e77e",
+      "cache_config": {
+        "cache_size_bytes": 16384,
+        "associativity": 2,
+        "replacement_policy": "FIFO",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 42,
+      "trace_id": "d5b3782760e451181ed761c18529a937e2b2c0919059eeac027a6ebb3c11e77e",
+      "cache_config": {
+        "cache_size_bytes": 16384,
+        "associativity": 4,
+        "replacement_policy": "RANDOM",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 42,
+      "trace_id": "d5b3782760e451181ed761c18529a937e2b2c0919059eeac027a6ebb3c11e77e",
+      "cache_config": {
+        "cache_size_bytes": 32768,
+        "associativity": 1,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 42,
+      "trace_id": "d5b3782760e451181ed761c18529a937e2b2c0919059eeac027a6ebb3c11e77e",
+      "cache_config": {
+        "cache_size_bytes": 32768,
+        "associativity": 2,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 42,
+      "trace_id": "d5b3782760e451181ed761c18529a937e2b2c0919059eeac027a6ebb3c11e77e",
+      "cache_config": {
+        "cache_size_bytes": 32768,
+        "associativity": 4,
+        "replacement_policy": "FIFO",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 42,
+      "trace_id": "d5b3782760e451181ed761c18529a937e2b2c0919059eeac027a6ebb3c11e77e",
+      "cache_config": {
+        "cache_size_bytes": 16384,
+        "associativity": 4,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 42,
+      "trace_id": "d5b3782760e451181ed761c18529a937e2b2c0919059eeac027a6ebb3c11e77e",
+      "cache_config": {
+        "cache_size_bytes": 8192,
+        "associativity": 2,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 42,
+      "trace_id": "d5b3782760e451181ed761c18529a937e2b2c0919059eeac027a6ebb3c11e77e",
+      "cache_config": {
+        "cache_size_bytes": 16384,
+        "associativity": 1,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 42,
+      "trace_id": "d5b3782760e451181ed761c18529a937e2b2c0919059eeac027a6ebb3c11e77e",
+      "cache_config": {
+        "cache_size_bytes": 32768,
+        "associativity": 2,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 42,
+      "trace_id": "d5b3782760e451181ed761c18529a937e2b2c0919059eeac027a6ebb3c11e77e",
+      "cache_config": {
+        "cache_size_bytes": 16384,
+        "associativity": 4,
+        "replacement_policy": "RANDOM",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 42,
+      "trace_id": "d5b3782760e451181ed761c18529a937e2b2c0919059eeac027a6ebb3c11e77e",
+      "cache_config": {
+        "cache_size_bytes": 32768,
+        "associativity": 1,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 42,
+      "trace_id": "d5b3782760e451181ed761c18529a937e2b2c0919059eeac027a6ebb3c11e77e",
+      "cache_config": {
+        "cache_size_bytes": 16384,
+        "associativity": 4,
+        "replacement_policy": "FIFO",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 42,
+      "trace_id": "d5b3782760e451181ed761c18529a937e2b2c0919059eeac027a6ebb3c11e77e",
+      "cache_config": {
+        "cache_size_bytes": 4096,
+        "associativity": 2,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 42,
+      "trace_id": "d5b3782760e451181ed761c18529a937e2b2c0919059eeac027a6ebb3c11e77e",
+      "cache_config": {
+        "cache_size_bytes": 8192,
+        "associativity": 2,
+        "replacement_policy": "RANDOM",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 42,
+      "trace_id": "d5b3782760e451181ed761c18529a937e2b2c0919059eeac027a6ebb3c11e77e",
+      "cache_config": {
+        "cache_size_bytes": 16384,
+        "associativity": 1,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 42,
+      "trace_id": "d5b3782760e451181ed761c18529a937e2b2c0919059eeac027a6ebb3c11e77e",
+      "cache_config": {
+        "cache_size_bytes": 16384,
+        "associativity": 2,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 42,
+      "trace_id": "d5b3782760e451181ed761c18529a937e2b2c0919059eeac027a6ebb3c11e77e",
+      "cache_config": {
+        "cache_size_bytes": 32768,
+        "associativity": 2,
+        "replacement_policy": "RANDOM",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 42,
+      "trace_id": "d5b3782760e451181ed761c18529a937e2b2c0919059eeac027a6ebb3c11e77e",
+      "cache_config": {
+        "cache_size_bytes": 4096,
+        "associativity": 2,
+        "replacement_policy": "FIFO",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 42,
+      "trace_id": "d5b3782760e451181ed761c18529a937e2b2c0919059eeac027a6ebb3c11e77e",
+      "cache_config": {
+        "cache_size_bytes": 4096,
+        "associativity": 4,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 42,
+      "trace_id": "d5b3782760e451181ed761c18529a937e2b2c0919059eeac027a6ebb3c11e77e",
+      "cache_config": {
+        "cache_size_bytes": 4096,
+        "associativity": 2,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 100,
+      "trace_id": "c5aea423b8476537dff08c930797b6f57639d11167aed54c6f03cdb7702a1f43",
+      "cache_config": {
+        "cache_size_bytes": 4096,
+        "associativity": 1,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 100,
+      "trace_id": "c5aea423b8476537dff08c930797b6f57639d11167aed54c6f03cdb7702a1f43",
+      "cache_config": {
+        "cache_size_bytes": 4096,
+        "associativity": 2,
+        "replacement_policy": "RANDOM",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 100,
+      "trace_id": "c5aea423b8476537dff08c930797b6f57639d11167aed54c6f03cdb7702a1f43",
+      "cache_config": {
+        "cache_size_bytes": 4096,
+        "associativity": 4,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 100,
+      "trace_id": "c5aea423b8476537dff08c930797b6f57639d11167aed54c6f03cdb7702a1f43",
+      "cache_config": {
+        "cache_size_bytes": 8192,
+        "associativity": 1,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 100,
+      "trace_id": "c5aea423b8476537dff08c930797b6f57639d11167aed54c6f03cdb7702a1f43",
+      "cache_config": {
+        "cache_size_bytes": 8192,
+        "associativity": 2,
+        "replacement_policy": "FIFO",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 100,
+      "trace_id": "c5aea423b8476537dff08c930797b6f57639d11167aed54c6f03cdb7702a1f43",
+      "cache_config": {
+        "cache_size_bytes": 8192,
+        "associativity": 4,
+        "replacement_policy": "RANDOM",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 100,
+      "trace_id": "c5aea423b8476537dff08c930797b6f57639d11167aed54c6f03cdb7702a1f43",
+      "cache_config": {
+        "cache_size_bytes": 16384,
+        "associativity": 1,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 100,
+      "trace_id": "c5aea423b8476537dff08c930797b6f57639d11167aed54c6f03cdb7702a1f43",
+      "cache_config": {
+        "cache_size_bytes": 16384,
+        "associativity": 2,
+        "replacement_policy": "FIFO",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 100,
+      "trace_id": "c5aea423b8476537dff08c930797b6f57639d11167aed54c6f03cdb7702a1f43",
+      "cache_config": {
+        "cache_size_bytes": 16384,
+        "associativity": 4,
+        "replacement_policy": "RANDOM",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 100,
+      "trace_id": "c5aea423b8476537dff08c930797b6f57639d11167aed54c6f03cdb7702a1f43",
+      "cache_config": {
+        "cache_size_bytes": 32768,
+        "associativity": 1,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 100,
+      "trace_id": "c5aea423b8476537dff08c930797b6f57639d11167aed54c6f03cdb7702a1f43",
+      "cache_config": {
+        "cache_size_bytes": 32768,
+        "associativity": 2,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 100,
+      "trace_id": "c5aea423b8476537dff08c930797b6f57639d11167aed54c6f03cdb7702a1f43",
+      "cache_config": {
+        "cache_size_bytes": 32768,
+        "associativity": 4,
+        "replacement_policy": "FIFO",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 100,
+      "trace_id": "c5aea423b8476537dff08c930797b6f57639d11167aed54c6f03cdb7702a1f43",
+      "cache_config": {
+        "cache_size_bytes": 8192,
+        "associativity": 1,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 100,
+      "trace_id": "c5aea423b8476537dff08c930797b6f57639d11167aed54c6f03cdb7702a1f43",
+      "cache_config": {
+        "cache_size_bytes": 4096,
+        "associativity": 4,
+        "replacement_policy": "FIFO",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 100,
+      "trace_id": "c5aea423b8476537dff08c930797b6f57639d11167aed54c6f03cdb7702a1f43",
+      "cache_config": {
+        "cache_size_bytes": 16384,
+        "associativity": 2,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 100,
+      "trace_id": "c5aea423b8476537dff08c930797b6f57639d11167aed54c6f03cdb7702a1f43",
+      "cache_config": {
+        "cache_size_bytes": 8192,
+        "associativity": 4,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 100,
+      "trace_id": "c5aea423b8476537dff08c930797b6f57639d11167aed54c6f03cdb7702a1f43",
+      "cache_config": {
+        "cache_size_bytes": 32768,
+        "associativity": 4,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 100,
+      "trace_id": "c5aea423b8476537dff08c930797b6f57639d11167aed54c6f03cdb7702a1f43",
+      "cache_config": {
+        "cache_size_bytes": 8192,
+        "associativity": 2,
+        "replacement_policy": "FIFO",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 100,
+      "trace_id": "c5aea423b8476537dff08c930797b6f57639d11167aed54c6f03cdb7702a1f43",
+      "cache_config": {
+        "cache_size_bytes": 8192,
+        "associativity": 2,
+        "replacement_policy": "FIFO",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 100,
+      "trace_id": "c5aea423b8476537dff08c930797b6f57639d11167aed54c6f03cdb7702a1f43",
+      "cache_config": {
+        "cache_size_bytes": 16384,
+        "associativity": 2,
+        "replacement_policy": "RANDOM",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 100,
+      "trace_id": "c5aea423b8476537dff08c930797b6f57639d11167aed54c6f03cdb7702a1f43",
+      "cache_config": {
+        "cache_size_bytes": 8192,
+        "associativity": 2,
+        "replacement_policy": "RANDOM",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 100,
+      "trace_id": "c5aea423b8476537dff08c930797b6f57639d11167aed54c6f03cdb7702a1f43",
+      "cache_config": {
+        "cache_size_bytes": 32768,
+        "associativity": 4,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 100,
+      "trace_id": "c5aea423b8476537dff08c930797b6f57639d11167aed54c6f03cdb7702a1f43",
+      "cache_config": {
+        "cache_size_bytes": 16384,
+        "associativity": 2,
+        "replacement_policy": "FIFO",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 100,
+      "trace_id": "c5aea423b8476537dff08c930797b6f57639d11167aed54c6f03cdb7702a1f43",
+      "cache_config": {
+        "cache_size_bytes": 16384,
+        "associativity": 2,
+        "replacement_policy": "FIFO",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 100,
+      "trace_id": "c5aea423b8476537dff08c930797b6f57639d11167aed54c6f03cdb7702a1f43",
+      "cache_config": {
+        "cache_size_bytes": 4096,
+        "associativity": 1,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 100,
+      "trace_id": "c5aea423b8476537dff08c930797b6f57639d11167aed54c6f03cdb7702a1f43",
+      "cache_config": {
+        "cache_size_bytes": 4096,
+        "associativity": 4,
+        "replacement_policy": "RANDOM",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 100,
+      "trace_id": "c5aea423b8476537dff08c930797b6f57639d11167aed54c6f03cdb7702a1f43",
+      "cache_config": {
+        "cache_size_bytes": 4096,
+        "associativity": 4,
+        "replacement_policy": "RANDOM",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 200,
+      "trace_id": "4a847a04413c28ea53414c6626fbee1a632c25d2478605755b87b6b9864a2248",
+      "cache_config": {
+        "cache_size_bytes": 4096,
+        "associativity": 1,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 200,
+      "trace_id": "4a847a04413c28ea53414c6626fbee1a632c25d2478605755b87b6b9864a2248",
+      "cache_config": {
+        "cache_size_bytes": 4096,
+        "associativity": 2,
+        "replacement_policy": "RANDOM",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 200,
+      "trace_id": "4a847a04413c28ea53414c6626fbee1a632c25d2478605755b87b6b9864a2248",
+      "cache_config": {
+        "cache_size_bytes": 4096,
+        "associativity": 4,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 200,
+      "trace_id": "4a847a04413c28ea53414c6626fbee1a632c25d2478605755b87b6b9864a2248",
+      "cache_config": {
+        "cache_size_bytes": 8192,
+        "associativity": 1,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 200,
+      "trace_id": "4a847a04413c28ea53414c6626fbee1a632c25d2478605755b87b6b9864a2248",
+      "cache_config": {
+        "cache_size_bytes": 8192,
+        "associativity": 2,
+        "replacement_policy": "FIFO",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 200,
+      "trace_id": "4a847a04413c28ea53414c6626fbee1a632c25d2478605755b87b6b9864a2248",
+      "cache_config": {
+        "cache_size_bytes": 8192,
+        "associativity": 4,
+        "replacement_policy": "RANDOM",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 200,
+      "trace_id": "4a847a04413c28ea53414c6626fbee1a632c25d2478605755b87b6b9864a2248",
+      "cache_config": {
+        "cache_size_bytes": 16384,
+        "associativity": 1,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 200,
+      "trace_id": "4a847a04413c28ea53414c6626fbee1a632c25d2478605755b87b6b9864a2248",
+      "cache_config": {
+        "cache_size_bytes": 16384,
+        "associativity": 2,
+        "replacement_policy": "FIFO",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 200,
+      "trace_id": "4a847a04413c28ea53414c6626fbee1a632c25d2478605755b87b6b9864a2248",
+      "cache_config": {
+        "cache_size_bytes": 16384,
+        "associativity": 4,
+        "replacement_policy": "RANDOM",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 200,
+      "trace_id": "4a847a04413c28ea53414c6626fbee1a632c25d2478605755b87b6b9864a2248",
+      "cache_config": {
+        "cache_size_bytes": 32768,
+        "associativity": 1,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 200,
+      "trace_id": "4a847a04413c28ea53414c6626fbee1a632c25d2478605755b87b6b9864a2248",
+      "cache_config": {
+        "cache_size_bytes": 32768,
+        "associativity": 2,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 200,
+      "trace_id": "4a847a04413c28ea53414c6626fbee1a632c25d2478605755b87b6b9864a2248",
+      "cache_config": {
+        "cache_size_bytes": 32768,
+        "associativity": 4,
+        "replacement_policy": "FIFO",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 200,
+      "trace_id": "4a847a04413c28ea53414c6626fbee1a632c25d2478605755b87b6b9864a2248",
+      "cache_config": {
+        "cache_size_bytes": 8192,
+        "associativity": 4,
+        "replacement_policy": "RANDOM",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 200,
+      "trace_id": "4a847a04413c28ea53414c6626fbee1a632c25d2478605755b87b6b9864a2248",
+      "cache_config": {
+        "cache_size_bytes": 8192,
+        "associativity": 4,
+        "replacement_policy": "RANDOM",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 200,
+      "trace_id": "4a847a04413c28ea53414c6626fbee1a632c25d2478605755b87b6b9864a2248",
+      "cache_config": {
+        "cache_size_bytes": 16384,
+        "associativity": 2,
+        "replacement_policy": "RANDOM",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 200,
+      "trace_id": "4a847a04413c28ea53414c6626fbee1a632c25d2478605755b87b6b9864a2248",
+      "cache_config": {
+        "cache_size_bytes": 32768,
+        "associativity": 2,
+        "replacement_policy": "FIFO",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 200,
+      "trace_id": "4a847a04413c28ea53414c6626fbee1a632c25d2478605755b87b6b9864a2248",
+      "cache_config": {
+        "cache_size_bytes": 16384,
+        "associativity": 2,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 200,
+      "trace_id": "4a847a04413c28ea53414c6626fbee1a632c25d2478605755b87b6b9864a2248",
+      "cache_config": {
+        "cache_size_bytes": 4096,
+        "associativity": 2,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 200,
+      "trace_id": "4a847a04413c28ea53414c6626fbee1a632c25d2478605755b87b6b9864a2248",
+      "cache_config": {
+        "cache_size_bytes": 32768,
+        "associativity": 2,
+        "replacement_policy": "RANDOM",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 200,
+      "trace_id": "4a847a04413c28ea53414c6626fbee1a632c25d2478605755b87b6b9864a2248",
+      "cache_config": {
+        "cache_size_bytes": 32768,
+        "associativity": 2,
+        "replacement_policy": "FIFO",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 200,
+      "trace_id": "4a847a04413c28ea53414c6626fbee1a632c25d2478605755b87b6b9864a2248",
+      "cache_config": {
+        "cache_size_bytes": 4096,
+        "associativity": 4,
+        "replacement_policy": "FIFO",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 200,
+      "trace_id": "4a847a04413c28ea53414c6626fbee1a632c25d2478605755b87b6b9864a2248",
+      "cache_config": {
+        "cache_size_bytes": 32768,
+        "associativity": 2,
+        "replacement_policy": "RANDOM",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 200,
+      "trace_id": "4a847a04413c28ea53414c6626fbee1a632c25d2478605755b87b6b9864a2248",
+      "cache_config": {
+        "cache_size_bytes": 16384,
+        "associativity": 2,
+        "replacement_policy": "RANDOM",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 200,
+      "trace_id": "4a847a04413c28ea53414c6626fbee1a632c25d2478605755b87b6b9864a2248",
+      "cache_config": {
+        "cache_size_bytes": 8192,
+        "associativity": 4,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 200,
+      "trace_id": "4a847a04413c28ea53414c6626fbee1a632c25d2478605755b87b6b9864a2248",
+      "cache_config": {
+        "cache_size_bytes": 4096,
+        "associativity": 2,
+        "replacement_policy": "FIFO",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 200,
+      "trace_id": "4a847a04413c28ea53414c6626fbee1a632c25d2478605755b87b6b9864a2248",
+      "cache_config": {
+        "cache_size_bytes": 8192,
+        "associativity": 4,
+        "replacement_policy": "FIFO",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 300,
+      "trace_id": "f6b437a18843be8058b89d417a38f4c80550b28e98e0a7b37bc7f6008c9348a4",
+      "cache_config": {
+        "cache_size_bytes": 4096,
+        "associativity": 1,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 300,
+      "trace_id": "f6b437a18843be8058b89d417a38f4c80550b28e98e0a7b37bc7f6008c9348a4",
+      "cache_config": {
+        "cache_size_bytes": 4096,
+        "associativity": 2,
+        "replacement_policy": "RANDOM",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 300,
+      "trace_id": "f6b437a18843be8058b89d417a38f4c80550b28e98e0a7b37bc7f6008c9348a4",
+      "cache_config": {
+        "cache_size_bytes": 4096,
+        "associativity": 4,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 300,
+      "trace_id": "f6b437a18843be8058b89d417a38f4c80550b28e98e0a7b37bc7f6008c9348a4",
+      "cache_config": {
+        "cache_size_bytes": 8192,
+        "associativity": 1,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 300,
+      "trace_id": "f6b437a18843be8058b89d417a38f4c80550b28e98e0a7b37bc7f6008c9348a4",
+      "cache_config": {
+        "cache_size_bytes": 8192,
+        "associativity": 2,
+        "replacement_policy": "FIFO",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 300,
+      "trace_id": "f6b437a18843be8058b89d417a38f4c80550b28e98e0a7b37bc7f6008c9348a4",
+      "cache_config": {
+        "cache_size_bytes": 8192,
+        "associativity": 4,
+        "replacement_policy": "RANDOM",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 300,
+      "trace_id": "f6b437a18843be8058b89d417a38f4c80550b28e98e0a7b37bc7f6008c9348a4",
+      "cache_config": {
+        "cache_size_bytes": 16384,
+        "associativity": 1,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 300,
+      "trace_id": "f6b437a18843be8058b89d417a38f4c80550b28e98e0a7b37bc7f6008c9348a4",
+      "cache_config": {
+        "cache_size_bytes": 16384,
+        "associativity": 2,
+        "replacement_policy": "FIFO",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 300,
+      "trace_id": "f6b437a18843be8058b89d417a38f4c80550b28e98e0a7b37bc7f6008c9348a4",
+      "cache_config": {
+        "cache_size_bytes": 16384,
+        "associativity": 4,
+        "replacement_policy": "RANDOM",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 300,
+      "trace_id": "f6b437a18843be8058b89d417a38f4c80550b28e98e0a7b37bc7f6008c9348a4",
+      "cache_config": {
+        "cache_size_bytes": 32768,
+        "associativity": 1,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 300,
+      "trace_id": "f6b437a18843be8058b89d417a38f4c80550b28e98e0a7b37bc7f6008c9348a4",
+      "cache_config": {
+        "cache_size_bytes": 32768,
+        "associativity": 2,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 300,
+      "trace_id": "f6b437a18843be8058b89d417a38f4c80550b28e98e0a7b37bc7f6008c9348a4",
+      "cache_config": {
+        "cache_size_bytes": 32768,
+        "associativity": 4,
+        "replacement_policy": "FIFO",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 300,
+      "trace_id": "f6b437a18843be8058b89d417a38f4c80550b28e98e0a7b37bc7f6008c9348a4",
+      "cache_config": {
+        "cache_size_bytes": 16384,
+        "associativity": 4,
+        "replacement_policy": "FIFO",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 300,
+      "trace_id": "f6b437a18843be8058b89d417a38f4c80550b28e98e0a7b37bc7f6008c9348a4",
+      "cache_config": {
+        "cache_size_bytes": 16384,
+        "associativity": 4,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 300,
+      "trace_id": "f6b437a18843be8058b89d417a38f4c80550b28e98e0a7b37bc7f6008c9348a4",
+      "cache_config": {
+        "cache_size_bytes": 16384,
+        "associativity": 4,
+        "replacement_policy": "FIFO",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 300,
+      "trace_id": "f6b437a18843be8058b89d417a38f4c80550b28e98e0a7b37bc7f6008c9348a4",
+      "cache_config": {
+        "cache_size_bytes": 32768,
+        "associativity": 4,
+        "replacement_policy": "RANDOM",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 300,
+      "trace_id": "f6b437a18843be8058b89d417a38f4c80550b28e98e0a7b37bc7f6008c9348a4",
+      "cache_config": {
+        "cache_size_bytes": 16384,
+        "associativity": 4,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 300,
+      "trace_id": "f6b437a18843be8058b89d417a38f4c80550b28e98e0a7b37bc7f6008c9348a4",
+      "cache_config": {
+        "cache_size_bytes": 8192,
+        "associativity": 1,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 300,
+      "trace_id": "f6b437a18843be8058b89d417a38f4c80550b28e98e0a7b37bc7f6008c9348a4",
+      "cache_config": {
+        "cache_size_bytes": 8192,
+        "associativity": 2,
+        "replacement_policy": "RANDOM",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 300,
+      "trace_id": "f6b437a18843be8058b89d417a38f4c80550b28e98e0a7b37bc7f6008c9348a4",
+      "cache_config": {
+        "cache_size_bytes": 4096,
+        "associativity": 2,
+        "replacement_policy": "RANDOM",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 300,
+      "trace_id": "f6b437a18843be8058b89d417a38f4c80550b28e98e0a7b37bc7f6008c9348a4",
+      "cache_config": {
+        "cache_size_bytes": 4096,
+        "associativity": 1,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 300,
+      "trace_id": "f6b437a18843be8058b89d417a38f4c80550b28e98e0a7b37bc7f6008c9348a4",
+      "cache_config": {
+        "cache_size_bytes": 8192,
+        "associativity": 2,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 300,
+      "trace_id": "f6b437a18843be8058b89d417a38f4c80550b28e98e0a7b37bc7f6008c9348a4",
+      "cache_config": {
+        "cache_size_bytes": 4096,
+        "associativity": 4,
+        "replacement_policy": "FIFO",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 300,
+      "trace_id": "f6b437a18843be8058b89d417a38f4c80550b28e98e0a7b37bc7f6008c9348a4",
+      "cache_config": {
+        "cache_size_bytes": 32768,
+        "associativity": 4,
+        "replacement_policy": "RANDOM",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 300,
+      "trace_id": "f6b437a18843be8058b89d417a38f4c80550b28e98e0a7b37bc7f6008c9348a4",
+      "cache_config": {
+        "cache_size_bytes": 32768,
+        "associativity": 1,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 300,
+      "trace_id": "f6b437a18843be8058b89d417a38f4c80550b28e98e0a7b37bc7f6008c9348a4",
+      "cache_config": {
+        "cache_size_bytes": 8192,
+        "associativity": 4,
+        "replacement_policy": "FIFO",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 400,
+      "trace_id": "10d923c78a320873542fbbc8e4ec8bdb770457fdf8003c774ec73498cf8add37",
+      "cache_config": {
+        "cache_size_bytes": 4096,
+        "associativity": 1,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 400,
+      "trace_id": "10d923c78a320873542fbbc8e4ec8bdb770457fdf8003c774ec73498cf8add37",
+      "cache_config": {
+        "cache_size_bytes": 4096,
+        "associativity": 2,
+        "replacement_policy": "RANDOM",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 400,
+      "trace_id": "10d923c78a320873542fbbc8e4ec8bdb770457fdf8003c774ec73498cf8add37",
+      "cache_config": {
+        "cache_size_bytes": 4096,
+        "associativity": 4,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 400,
+      "trace_id": "10d923c78a320873542fbbc8e4ec8bdb770457fdf8003c774ec73498cf8add37",
+      "cache_config": {
+        "cache_size_bytes": 8192,
+        "associativity": 1,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 400,
+      "trace_id": "10d923c78a320873542fbbc8e4ec8bdb770457fdf8003c774ec73498cf8add37",
+      "cache_config": {
+        "cache_size_bytes": 8192,
+        "associativity": 2,
+        "replacement_policy": "FIFO",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 400,
+      "trace_id": "10d923c78a320873542fbbc8e4ec8bdb770457fdf8003c774ec73498cf8add37",
+      "cache_config": {
+        "cache_size_bytes": 8192,
+        "associativity": 4,
+        "replacement_policy": "RANDOM",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 400,
+      "trace_id": "10d923c78a320873542fbbc8e4ec8bdb770457fdf8003c774ec73498cf8add37",
+      "cache_config": {
+        "cache_size_bytes": 16384,
+        "associativity": 1,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 400,
+      "trace_id": "10d923c78a320873542fbbc8e4ec8bdb770457fdf8003c774ec73498cf8add37",
+      "cache_config": {
+        "cache_size_bytes": 16384,
+        "associativity": 2,
+        "replacement_policy": "FIFO",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 400,
+      "trace_id": "10d923c78a320873542fbbc8e4ec8bdb770457fdf8003c774ec73498cf8add37",
+      "cache_config": {
+        "cache_size_bytes": 16384,
+        "associativity": 4,
+        "replacement_policy": "RANDOM",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 400,
+      "trace_id": "10d923c78a320873542fbbc8e4ec8bdb770457fdf8003c774ec73498cf8add37",
+      "cache_config": {
+        "cache_size_bytes": 32768,
+        "associativity": 1,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 400,
+      "trace_id": "10d923c78a320873542fbbc8e4ec8bdb770457fdf8003c774ec73498cf8add37",
+      "cache_config": {
+        "cache_size_bytes": 32768,
+        "associativity": 2,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 400,
+      "trace_id": "10d923c78a320873542fbbc8e4ec8bdb770457fdf8003c774ec73498cf8add37",
+      "cache_config": {
+        "cache_size_bytes": 32768,
+        "associativity": 4,
+        "replacement_policy": "FIFO",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 400,
+      "trace_id": "10d923c78a320873542fbbc8e4ec8bdb770457fdf8003c774ec73498cf8add37",
+      "cache_config": {
+        "cache_size_bytes": 4096,
+        "associativity": 2,
+        "replacement_policy": "FIFO",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 400,
+      "trace_id": "10d923c78a320873542fbbc8e4ec8bdb770457fdf8003c774ec73498cf8add37",
+      "cache_config": {
+        "cache_size_bytes": 4096,
+        "associativity": 2,
+        "replacement_policy": "RANDOM",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 400,
+      "trace_id": "10d923c78a320873542fbbc8e4ec8bdb770457fdf8003c774ec73498cf8add37",
+      "cache_config": {
+        "cache_size_bytes": 4096,
+        "associativity": 4,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 400,
+      "trace_id": "10d923c78a320873542fbbc8e4ec8bdb770457fdf8003c774ec73498cf8add37",
+      "cache_config": {
+        "cache_size_bytes": 32768,
+        "associativity": 2,
+        "replacement_policy": "FIFO",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 400,
+      "trace_id": "10d923c78a320873542fbbc8e4ec8bdb770457fdf8003c774ec73498cf8add37",
+      "cache_config": {
+        "cache_size_bytes": 8192,
+        "associativity": 2,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 400,
+      "trace_id": "10d923c78a320873542fbbc8e4ec8bdb770457fdf8003c774ec73498cf8add37",
+      "cache_config": {
+        "cache_size_bytes": 32768,
+        "associativity": 4,
+        "replacement_policy": "FIFO",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 400,
+      "trace_id": "10d923c78a320873542fbbc8e4ec8bdb770457fdf8003c774ec73498cf8add37",
+      "cache_config": {
+        "cache_size_bytes": 32768,
+        "associativity": 2,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 400,
+      "trace_id": "10d923c78a320873542fbbc8e4ec8bdb770457fdf8003c774ec73498cf8add37",
+      "cache_config": {
+        "cache_size_bytes": 16384,
+        "associativity": 4,
+        "replacement_policy": "RANDOM",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 400,
+      "trace_id": "10d923c78a320873542fbbc8e4ec8bdb770457fdf8003c774ec73498cf8add37",
+      "cache_config": {
+        "cache_size_bytes": 32768,
+        "associativity": 4,
+        "replacement_policy": "RANDOM",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 400,
+      "trace_id": "10d923c78a320873542fbbc8e4ec8bdb770457fdf8003c774ec73498cf8add37",
+      "cache_config": {
+        "cache_size_bytes": 8192,
+        "associativity": 4,
+        "replacement_policy": "FIFO",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 400,
+      "trace_id": "10d923c78a320873542fbbc8e4ec8bdb770457fdf8003c774ec73498cf8add37",
+      "cache_config": {
+        "cache_size_bytes": 32768,
+        "associativity": 4,
+        "replacement_policy": "FIFO",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 400,
+      "trace_id": "10d923c78a320873542fbbc8e4ec8bdb770457fdf8003c774ec73498cf8add37",
+      "cache_config": {
+        "cache_size_bytes": 32768,
+        "associativity": 4,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 400,
+      "trace_id": "10d923c78a320873542fbbc8e4ec8bdb770457fdf8003c774ec73498cf8add37",
+      "cache_config": {
+        "cache_size_bytes": 4096,
+        "associativity": 4,
+        "replacement_policy": "RANDOM",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "cnn",
+      "seed": 400,
+      "trace_id": "10d923c78a320873542fbbc8e4ec8bdb770457fdf8003c774ec73498cf8add37",
+      "cache_config": {
+        "cache_size_bytes": 8192,
+        "associativity": 4,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 42,
+      "trace_id": "05fdfcb5a994e37d52c4c7c5e53f61652e37ef6b949d26beba3820db17c2ee69",
+      "cache_config": {
+        "cache_size_bytes": 4096,
+        "associativity": 1,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 42,
+      "trace_id": "05fdfcb5a994e37d52c4c7c5e53f61652e37ef6b949d26beba3820db17c2ee69",
+      "cache_config": {
+        "cache_size_bytes": 4096,
+        "associativity": 2,
+        "replacement_policy": "RANDOM",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 42,
+      "trace_id": "05fdfcb5a994e37d52c4c7c5e53f61652e37ef6b949d26beba3820db17c2ee69",
+      "cache_config": {
+        "cache_size_bytes": 4096,
+        "associativity": 4,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 42,
+      "trace_id": "05fdfcb5a994e37d52c4c7c5e53f61652e37ef6b949d26beba3820db17c2ee69",
+      "cache_config": {
+        "cache_size_bytes": 8192,
+        "associativity": 1,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 42,
+      "trace_id": "05fdfcb5a994e37d52c4c7c5e53f61652e37ef6b949d26beba3820db17c2ee69",
+      "cache_config": {
+        "cache_size_bytes": 8192,
+        "associativity": 2,
+        "replacement_policy": "FIFO",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 42,
+      "trace_id": "05fdfcb5a994e37d52c4c7c5e53f61652e37ef6b949d26beba3820db17c2ee69",
+      "cache_config": {
+        "cache_size_bytes": 8192,
+        "associativity": 4,
+        "replacement_policy": "RANDOM",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 42,
+      "trace_id": "05fdfcb5a994e37d52c4c7c5e53f61652e37ef6b949d26beba3820db17c2ee69",
+      "cache_config": {
+        "cache_size_bytes": 16384,
+        "associativity": 1,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 42,
+      "trace_id": "05fdfcb5a994e37d52c4c7c5e53f61652e37ef6b949d26beba3820db17c2ee69",
+      "cache_config": {
+        "cache_size_bytes": 16384,
+        "associativity": 2,
+        "replacement_policy": "FIFO",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 42,
+      "trace_id": "05fdfcb5a994e37d52c4c7c5e53f61652e37ef6b949d26beba3820db17c2ee69",
+      "cache_config": {
+        "cache_size_bytes": 16384,
+        "associativity": 4,
+        "replacement_policy": "RANDOM",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 42,
+      "trace_id": "05fdfcb5a994e37d52c4c7c5e53f61652e37ef6b949d26beba3820db17c2ee69",
+      "cache_config": {
+        "cache_size_bytes": 32768,
+        "associativity": 1,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 42,
+      "trace_id": "05fdfcb5a994e37d52c4c7c5e53f61652e37ef6b949d26beba3820db17c2ee69",
+      "cache_config": {
+        "cache_size_bytes": 32768,
+        "associativity": 2,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 42,
+      "trace_id": "05fdfcb5a994e37d52c4c7c5e53f61652e37ef6b949d26beba3820db17c2ee69",
+      "cache_config": {
+        "cache_size_bytes": 32768,
+        "associativity": 4,
+        "replacement_policy": "FIFO",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 42,
+      "trace_id": "05fdfcb5a994e37d52c4c7c5e53f61652e37ef6b949d26beba3820db17c2ee69",
+      "cache_config": {
+        "cache_size_bytes": 16384,
+        "associativity": 2,
+        "replacement_policy": "RANDOM",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 42,
+      "trace_id": "05fdfcb5a994e37d52c4c7c5e53f61652e37ef6b949d26beba3820db17c2ee69",
+      "cache_config": {
+        "cache_size_bytes": 8192,
+        "associativity": 4,
+        "replacement_policy": "FIFO",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 42,
+      "trace_id": "05fdfcb5a994e37d52c4c7c5e53f61652e37ef6b949d26beba3820db17c2ee69",
+      "cache_config": {
+        "cache_size_bytes": 32768,
+        "associativity": 2,
+        "replacement_policy": "FIFO",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 42,
+      "trace_id": "05fdfcb5a994e37d52c4c7c5e53f61652e37ef6b949d26beba3820db17c2ee69",
+      "cache_config": {
+        "cache_size_bytes": 32768,
+        "associativity": 4,
+        "replacement_policy": "RANDOM",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 42,
+      "trace_id": "05fdfcb5a994e37d52c4c7c5e53f61652e37ef6b949d26beba3820db17c2ee69",
+      "cache_config": {
+        "cache_size_bytes": 32768,
+        "associativity": 4,
+        "replacement_policy": "FIFO",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 42,
+      "trace_id": "05fdfcb5a994e37d52c4c7c5e53f61652e37ef6b949d26beba3820db17c2ee69",
+      "cache_config": {
+        "cache_size_bytes": 16384,
+        "associativity": 2,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 42,
+      "trace_id": "05fdfcb5a994e37d52c4c7c5e53f61652e37ef6b949d26beba3820db17c2ee69",
+      "cache_config": {
+        "cache_size_bytes": 8192,
+        "associativity": 4,
+        "replacement_policy": "RANDOM",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 42,
+      "trace_id": "05fdfcb5a994e37d52c4c7c5e53f61652e37ef6b949d26beba3820db17c2ee69",
+      "cache_config": {
+        "cache_size_bytes": 16384,
+        "associativity": 2,
+        "replacement_policy": "FIFO",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 42,
+      "trace_id": "05fdfcb5a994e37d52c4c7c5e53f61652e37ef6b949d26beba3820db17c2ee69",
+      "cache_config": {
+        "cache_size_bytes": 16384,
+        "associativity": 2,
+        "replacement_policy": "FIFO",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 42,
+      "trace_id": "05fdfcb5a994e37d52c4c7c5e53f61652e37ef6b949d26beba3820db17c2ee69",
+      "cache_config": {
+        "cache_size_bytes": 4096,
+        "associativity": 4,
+        "replacement_policy": "FIFO",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 42,
+      "trace_id": "05fdfcb5a994e37d52c4c7c5e53f61652e37ef6b949d26beba3820db17c2ee69",
+      "cache_config": {
+        "cache_size_bytes": 4096,
+        "associativity": 2,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 42,
+      "trace_id": "05fdfcb5a994e37d52c4c7c5e53f61652e37ef6b949d26beba3820db17c2ee69",
+      "cache_config": {
+        "cache_size_bytes": 16384,
+        "associativity": 4,
+        "replacement_policy": "FIFO",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 42,
+      "trace_id": "05fdfcb5a994e37d52c4c7c5e53f61652e37ef6b949d26beba3820db17c2ee69",
+      "cache_config": {
+        "cache_size_bytes": 32768,
+        "associativity": 4,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 42,
+      "trace_id": "05fdfcb5a994e37d52c4c7c5e53f61652e37ef6b949d26beba3820db17c2ee69",
+      "cache_config": {
+        "cache_size_bytes": 32768,
+        "associativity": 2,
+        "replacement_policy": "RANDOM",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 42,
+      "trace_id": "05fdfcb5a994e37d52c4c7c5e53f61652e37ef6b949d26beba3820db17c2ee69",
+      "cache_config": {
+        "cache_size_bytes": 16384,
+        "associativity": 1,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 100,
+      "trace_id": "b192078b8b65b83817632e5914015f856b80cd4324c49831b83aaebb5a9885ba",
+      "cache_config": {
+        "cache_size_bytes": 4096,
+        "associativity": 1,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 100,
+      "trace_id": "b192078b8b65b83817632e5914015f856b80cd4324c49831b83aaebb5a9885ba",
+      "cache_config": {
+        "cache_size_bytes": 4096,
+        "associativity": 2,
+        "replacement_policy": "RANDOM",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 100,
+      "trace_id": "b192078b8b65b83817632e5914015f856b80cd4324c49831b83aaebb5a9885ba",
+      "cache_config": {
+        "cache_size_bytes": 4096,
+        "associativity": 4,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 100,
+      "trace_id": "b192078b8b65b83817632e5914015f856b80cd4324c49831b83aaebb5a9885ba",
+      "cache_config": {
+        "cache_size_bytes": 8192,
+        "associativity": 1,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 100,
+      "trace_id": "b192078b8b65b83817632e5914015f856b80cd4324c49831b83aaebb5a9885ba",
+      "cache_config": {
+        "cache_size_bytes": 8192,
+        "associativity": 2,
+        "replacement_policy": "FIFO",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 100,
+      "trace_id": "b192078b8b65b83817632e5914015f856b80cd4324c49831b83aaebb5a9885ba",
+      "cache_config": {
+        "cache_size_bytes": 8192,
+        "associativity": 4,
+        "replacement_policy": "RANDOM",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 100,
+      "trace_id": "b192078b8b65b83817632e5914015f856b80cd4324c49831b83aaebb5a9885ba",
+      "cache_config": {
+        "cache_size_bytes": 16384,
+        "associativity": 1,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 100,
+      "trace_id": "b192078b8b65b83817632e5914015f856b80cd4324c49831b83aaebb5a9885ba",
+      "cache_config": {
+        "cache_size_bytes": 16384,
+        "associativity": 2,
+        "replacement_policy": "FIFO",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 100,
+      "trace_id": "b192078b8b65b83817632e5914015f856b80cd4324c49831b83aaebb5a9885ba",
+      "cache_config": {
+        "cache_size_bytes": 16384,
+        "associativity": 4,
+        "replacement_policy": "RANDOM",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 100,
+      "trace_id": "b192078b8b65b83817632e5914015f856b80cd4324c49831b83aaebb5a9885ba",
+      "cache_config": {
+        "cache_size_bytes": 32768,
+        "associativity": 1,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 100,
+      "trace_id": "b192078b8b65b83817632e5914015f856b80cd4324c49831b83aaebb5a9885ba",
+      "cache_config": {
+        "cache_size_bytes": 32768,
+        "associativity": 2,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 100,
+      "trace_id": "b192078b8b65b83817632e5914015f856b80cd4324c49831b83aaebb5a9885ba",
+      "cache_config": {
+        "cache_size_bytes": 32768,
+        "associativity": 4,
+        "replacement_policy": "FIFO",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 100,
+      "trace_id": "b192078b8b65b83817632e5914015f856b80cd4324c49831b83aaebb5a9885ba",
+      "cache_config": {
+        "cache_size_bytes": 16384,
+        "associativity": 4,
+        "replacement_policy": "FIFO",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 100,
+      "trace_id": "b192078b8b65b83817632e5914015f856b80cd4324c49831b83aaebb5a9885ba",
+      "cache_config": {
+        "cache_size_bytes": 4096,
+        "associativity": 1,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 100,
+      "trace_id": "b192078b8b65b83817632e5914015f856b80cd4324c49831b83aaebb5a9885ba",
+      "cache_config": {
+        "cache_size_bytes": 16384,
+        "associativity": 4,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 100,
+      "trace_id": "b192078b8b65b83817632e5914015f856b80cd4324c49831b83aaebb5a9885ba",
+      "cache_config": {
+        "cache_size_bytes": 16384,
+        "associativity": 2,
+        "replacement_policy": "RANDOM",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 100,
+      "trace_id": "b192078b8b65b83817632e5914015f856b80cd4324c49831b83aaebb5a9885ba",
+      "cache_config": {
+        "cache_size_bytes": 32768,
+        "associativity": 4,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 100,
+      "trace_id": "b192078b8b65b83817632e5914015f856b80cd4324c49831b83aaebb5a9885ba",
+      "cache_config": {
+        "cache_size_bytes": 32768,
+        "associativity": 4,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 100,
+      "trace_id": "b192078b8b65b83817632e5914015f856b80cd4324c49831b83aaebb5a9885ba",
+      "cache_config": {
+        "cache_size_bytes": 16384,
+        "associativity": 1,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 100,
+      "trace_id": "b192078b8b65b83817632e5914015f856b80cd4324c49831b83aaebb5a9885ba",
+      "cache_config": {
+        "cache_size_bytes": 16384,
+        "associativity": 4,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 100,
+      "trace_id": "b192078b8b65b83817632e5914015f856b80cd4324c49831b83aaebb5a9885ba",
+      "cache_config": {
+        "cache_size_bytes": 32768,
+        "associativity": 1,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 100,
+      "trace_id": "b192078b8b65b83817632e5914015f856b80cd4324c49831b83aaebb5a9885ba",
+      "cache_config": {
+        "cache_size_bytes": 16384,
+        "associativity": 4,
+        "replacement_policy": "RANDOM",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 100,
+      "trace_id": "b192078b8b65b83817632e5914015f856b80cd4324c49831b83aaebb5a9885ba",
+      "cache_config": {
+        "cache_size_bytes": 4096,
+        "associativity": 2,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 100,
+      "trace_id": "b192078b8b65b83817632e5914015f856b80cd4324c49831b83aaebb5a9885ba",
+      "cache_config": {
+        "cache_size_bytes": 8192,
+        "associativity": 4,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 100,
+      "trace_id": "b192078b8b65b83817632e5914015f856b80cd4324c49831b83aaebb5a9885ba",
+      "cache_config": {
+        "cache_size_bytes": 8192,
+        "associativity": 2,
+        "replacement_policy": "RANDOM",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 100,
+      "trace_id": "b192078b8b65b83817632e5914015f856b80cd4324c49831b83aaebb5a9885ba",
+      "cache_config": {
+        "cache_size_bytes": 4096,
+        "associativity": 4,
+        "replacement_policy": "FIFO",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 100,
+      "trace_id": "b192078b8b65b83817632e5914015f856b80cd4324c49831b83aaebb5a9885ba",
+      "cache_config": {
+        "cache_size_bytes": 4096,
+        "associativity": 2,
+        "replacement_policy": "RANDOM",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 200,
+      "trace_id": "8c43a450491e3910c7749f2eacc0665f78df08a25581ee929bab31679d0e9864",
+      "cache_config": {
+        "cache_size_bytes": 4096,
+        "associativity": 1,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 200,
+      "trace_id": "8c43a450491e3910c7749f2eacc0665f78df08a25581ee929bab31679d0e9864",
+      "cache_config": {
+        "cache_size_bytes": 4096,
+        "associativity": 2,
+        "replacement_policy": "RANDOM",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 200,
+      "trace_id": "8c43a450491e3910c7749f2eacc0665f78df08a25581ee929bab31679d0e9864",
+      "cache_config": {
+        "cache_size_bytes": 4096,
+        "associativity": 4,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 200,
+      "trace_id": "8c43a450491e3910c7749f2eacc0665f78df08a25581ee929bab31679d0e9864",
+      "cache_config": {
+        "cache_size_bytes": 8192,
+        "associativity": 1,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 200,
+      "trace_id": "8c43a450491e3910c7749f2eacc0665f78df08a25581ee929bab31679d0e9864",
+      "cache_config": {
+        "cache_size_bytes": 8192,
+        "associativity": 2,
+        "replacement_policy": "FIFO",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 200,
+      "trace_id": "8c43a450491e3910c7749f2eacc0665f78df08a25581ee929bab31679d0e9864",
+      "cache_config": {
+        "cache_size_bytes": 8192,
+        "associativity": 4,
+        "replacement_policy": "RANDOM",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 200,
+      "trace_id": "8c43a450491e3910c7749f2eacc0665f78df08a25581ee929bab31679d0e9864",
+      "cache_config": {
+        "cache_size_bytes": 16384,
+        "associativity": 1,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 200,
+      "trace_id": "8c43a450491e3910c7749f2eacc0665f78df08a25581ee929bab31679d0e9864",
+      "cache_config": {
+        "cache_size_bytes": 16384,
+        "associativity": 2,
+        "replacement_policy": "FIFO",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 200,
+      "trace_id": "8c43a450491e3910c7749f2eacc0665f78df08a25581ee929bab31679d0e9864",
+      "cache_config": {
+        "cache_size_bytes": 16384,
+        "associativity": 4,
+        "replacement_policy": "RANDOM",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 200,
+      "trace_id": "8c43a450491e3910c7749f2eacc0665f78df08a25581ee929bab31679d0e9864",
+      "cache_config": {
+        "cache_size_bytes": 32768,
+        "associativity": 1,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 200,
+      "trace_id": "8c43a450491e3910c7749f2eacc0665f78df08a25581ee929bab31679d0e9864",
+      "cache_config": {
+        "cache_size_bytes": 32768,
+        "associativity": 2,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 200,
+      "trace_id": "8c43a450491e3910c7749f2eacc0665f78df08a25581ee929bab31679d0e9864",
+      "cache_config": {
+        "cache_size_bytes": 32768,
+        "associativity": 4,
+        "replacement_policy": "FIFO",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 200,
+      "trace_id": "8c43a450491e3910c7749f2eacc0665f78df08a25581ee929bab31679d0e9864",
+      "cache_config": {
+        "cache_size_bytes": 8192,
+        "associativity": 2,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 200,
+      "trace_id": "8c43a450491e3910c7749f2eacc0665f78df08a25581ee929bab31679d0e9864",
+      "cache_config": {
+        "cache_size_bytes": 32768,
+        "associativity": 2,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 200,
+      "trace_id": "8c43a450491e3910c7749f2eacc0665f78df08a25581ee929bab31679d0e9864",
+      "cache_config": {
+        "cache_size_bytes": 16384,
+        "associativity": 2,
+        "replacement_policy": "RANDOM",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 200,
+      "trace_id": "8c43a450491e3910c7749f2eacc0665f78df08a25581ee929bab31679d0e9864",
+      "cache_config": {
+        "cache_size_bytes": 4096,
+        "associativity": 4,
+        "replacement_policy": "RANDOM",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 200,
+      "trace_id": "8c43a450491e3910c7749f2eacc0665f78df08a25581ee929bab31679d0e9864",
+      "cache_config": {
+        "cache_size_bytes": 8192,
+        "associativity": 1,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 200,
+      "trace_id": "8c43a450491e3910c7749f2eacc0665f78df08a25581ee929bab31679d0e9864",
+      "cache_config": {
+        "cache_size_bytes": 4096,
+        "associativity": 2,
+        "replacement_policy": "FIFO",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 200,
+      "trace_id": "8c43a450491e3910c7749f2eacc0665f78df08a25581ee929bab31679d0e9864",
+      "cache_config": {
+        "cache_size_bytes": 8192,
+        "associativity": 4,
+        "replacement_policy": "RANDOM",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 200,
+      "trace_id": "8c43a450491e3910c7749f2eacc0665f78df08a25581ee929bab31679d0e9864",
+      "cache_config": {
+        "cache_size_bytes": 32768,
+        "associativity": 2,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 200,
+      "trace_id": "8c43a450491e3910c7749f2eacc0665f78df08a25581ee929bab31679d0e9864",
+      "cache_config": {
+        "cache_size_bytes": 4096,
+        "associativity": 2,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 200,
+      "trace_id": "8c43a450491e3910c7749f2eacc0665f78df08a25581ee929bab31679d0e9864",
+      "cache_config": {
+        "cache_size_bytes": 4096,
+        "associativity": 2,
+        "replacement_policy": "RANDOM",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 200,
+      "trace_id": "8c43a450491e3910c7749f2eacc0665f78df08a25581ee929bab31679d0e9864",
+      "cache_config": {
+        "cache_size_bytes": 4096,
+        "associativity": 4,
+        "replacement_policy": "RANDOM",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 200,
+      "trace_id": "8c43a450491e3910c7749f2eacc0665f78df08a25581ee929bab31679d0e9864",
+      "cache_config": {
+        "cache_size_bytes": 32768,
+        "associativity": 1,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 200,
+      "trace_id": "8c43a450491e3910c7749f2eacc0665f78df08a25581ee929bab31679d0e9864",
+      "cache_config": {
+        "cache_size_bytes": 8192,
+        "associativity": 4,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 200,
+      "trace_id": "8c43a450491e3910c7749f2eacc0665f78df08a25581ee929bab31679d0e9864",
+      "cache_config": {
+        "cache_size_bytes": 16384,
+        "associativity": 4,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 300,
+      "trace_id": "5b550465ba342983b85a99370b51aa2e4fc36f2410af3f15218df431e57cc38a",
+      "cache_config": {
+        "cache_size_bytes": 4096,
+        "associativity": 1,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 300,
+      "trace_id": "5b550465ba342983b85a99370b51aa2e4fc36f2410af3f15218df431e57cc38a",
+      "cache_config": {
+        "cache_size_bytes": 4096,
+        "associativity": 2,
+        "replacement_policy": "RANDOM",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 300,
+      "trace_id": "5b550465ba342983b85a99370b51aa2e4fc36f2410af3f15218df431e57cc38a",
+      "cache_config": {
+        "cache_size_bytes": 4096,
+        "associativity": 4,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 300,
+      "trace_id": "5b550465ba342983b85a99370b51aa2e4fc36f2410af3f15218df431e57cc38a",
+      "cache_config": {
+        "cache_size_bytes": 8192,
+        "associativity": 1,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 300,
+      "trace_id": "5b550465ba342983b85a99370b51aa2e4fc36f2410af3f15218df431e57cc38a",
+      "cache_config": {
+        "cache_size_bytes": 8192,
+        "associativity": 2,
+        "replacement_policy": "FIFO",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 300,
+      "trace_id": "5b550465ba342983b85a99370b51aa2e4fc36f2410af3f15218df431e57cc38a",
+      "cache_config": {
+        "cache_size_bytes": 8192,
+        "associativity": 4,
+        "replacement_policy": "RANDOM",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 300,
+      "trace_id": "5b550465ba342983b85a99370b51aa2e4fc36f2410af3f15218df431e57cc38a",
+      "cache_config": {
+        "cache_size_bytes": 16384,
+        "associativity": 1,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 300,
+      "trace_id": "5b550465ba342983b85a99370b51aa2e4fc36f2410af3f15218df431e57cc38a",
+      "cache_config": {
+        "cache_size_bytes": 16384,
+        "associativity": 2,
+        "replacement_policy": "FIFO",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 300,
+      "trace_id": "5b550465ba342983b85a99370b51aa2e4fc36f2410af3f15218df431e57cc38a",
+      "cache_config": {
+        "cache_size_bytes": 16384,
+        "associativity": 4,
+        "replacement_policy": "RANDOM",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 300,
+      "trace_id": "5b550465ba342983b85a99370b51aa2e4fc36f2410af3f15218df431e57cc38a",
+      "cache_config": {
+        "cache_size_bytes": 32768,
+        "associativity": 1,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 300,
+      "trace_id": "5b550465ba342983b85a99370b51aa2e4fc36f2410af3f15218df431e57cc38a",
+      "cache_config": {
+        "cache_size_bytes": 32768,
+        "associativity": 2,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 300,
+      "trace_id": "5b550465ba342983b85a99370b51aa2e4fc36f2410af3f15218df431e57cc38a",
+      "cache_config": {
+        "cache_size_bytes": 32768,
+        "associativity": 4,
+        "replacement_policy": "FIFO",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 300,
+      "trace_id": "5b550465ba342983b85a99370b51aa2e4fc36f2410af3f15218df431e57cc38a",
+      "cache_config": {
+        "cache_size_bytes": 32768,
+        "associativity": 4,
+        "replacement_policy": "RANDOM",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 300,
+      "trace_id": "5b550465ba342983b85a99370b51aa2e4fc36f2410af3f15218df431e57cc38a",
+      "cache_config": {
+        "cache_size_bytes": 8192,
+        "associativity": 2,
+        "replacement_policy": "FIFO",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 300,
+      "trace_id": "5b550465ba342983b85a99370b51aa2e4fc36f2410af3f15218df431e57cc38a",
+      "cache_config": {
+        "cache_size_bytes": 4096,
+        "associativity": 4,
+        "replacement_policy": "FIFO",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 300,
+      "trace_id": "5b550465ba342983b85a99370b51aa2e4fc36f2410af3f15218df431e57cc38a",
+      "cache_config": {
+        "cache_size_bytes": 8192,
+        "associativity": 2,
+        "replacement_policy": "RANDOM",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 300,
+      "trace_id": "5b550465ba342983b85a99370b51aa2e4fc36f2410af3f15218df431e57cc38a",
+      "cache_config": {
+        "cache_size_bytes": 4096,
+        "associativity": 4,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 300,
+      "trace_id": "5b550465ba342983b85a99370b51aa2e4fc36f2410af3f15218df431e57cc38a",
+      "cache_config": {
+        "cache_size_bytes": 8192,
+        "associativity": 2,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 300,
+      "trace_id": "5b550465ba342983b85a99370b51aa2e4fc36f2410af3f15218df431e57cc38a",
+      "cache_config": {
+        "cache_size_bytes": 16384,
+        "associativity": 4,
+        "replacement_policy": "FIFO",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 300,
+      "trace_id": "5b550465ba342983b85a99370b51aa2e4fc36f2410af3f15218df431e57cc38a",
+      "cache_config": {
+        "cache_size_bytes": 4096,
+        "associativity": 4,
+        "replacement_policy": "RANDOM",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 300,
+      "trace_id": "5b550465ba342983b85a99370b51aa2e4fc36f2410af3f15218df431e57cc38a",
+      "cache_config": {
+        "cache_size_bytes": 8192,
+        "associativity": 4,
+        "replacement_policy": "FIFO",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 300,
+      "trace_id": "5b550465ba342983b85a99370b51aa2e4fc36f2410af3f15218df431e57cc38a",
+      "cache_config": {
+        "cache_size_bytes": 8192,
+        "associativity": 2,
+        "replacement_policy": "RANDOM",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 300,
+      "trace_id": "5b550465ba342983b85a99370b51aa2e4fc36f2410af3f15218df431e57cc38a",
+      "cache_config": {
+        "cache_size_bytes": 8192,
+        "associativity": 2,
+        "replacement_policy": "FIFO",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 300,
+      "trace_id": "5b550465ba342983b85a99370b51aa2e4fc36f2410af3f15218df431e57cc38a",
+      "cache_config": {
+        "cache_size_bytes": 16384,
+        "associativity": 2,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 300,
+      "trace_id": "5b550465ba342983b85a99370b51aa2e4fc36f2410af3f15218df431e57cc38a",
+      "cache_config": {
+        "cache_size_bytes": 4096,
+        "associativity": 2,
+        "replacement_policy": "FIFO",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 300,
+      "trace_id": "5b550465ba342983b85a99370b51aa2e4fc36f2410af3f15218df431e57cc38a",
+      "cache_config": {
+        "cache_size_bytes": 32768,
+        "associativity": 2,
+        "replacement_policy": "FIFO",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 400,
+      "trace_id": "c65129490cb40c89cc13cd341325323702e075f6d302cff28b07daedc025421a",
+      "cache_config": {
+        "cache_size_bytes": 4096,
+        "associativity": 1,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 400,
+      "trace_id": "c65129490cb40c89cc13cd341325323702e075f6d302cff28b07daedc025421a",
+      "cache_config": {
+        "cache_size_bytes": 4096,
+        "associativity": 2,
+        "replacement_policy": "RANDOM",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 400,
+      "trace_id": "c65129490cb40c89cc13cd341325323702e075f6d302cff28b07daedc025421a",
+      "cache_config": {
+        "cache_size_bytes": 4096,
+        "associativity": 4,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 400,
+      "trace_id": "c65129490cb40c89cc13cd341325323702e075f6d302cff28b07daedc025421a",
+      "cache_config": {
+        "cache_size_bytes": 8192,
+        "associativity": 1,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 400,
+      "trace_id": "c65129490cb40c89cc13cd341325323702e075f6d302cff28b07daedc025421a",
+      "cache_config": {
+        "cache_size_bytes": 8192,
+        "associativity": 2,
+        "replacement_policy": "FIFO",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 400,
+      "trace_id": "c65129490cb40c89cc13cd341325323702e075f6d302cff28b07daedc025421a",
+      "cache_config": {
+        "cache_size_bytes": 8192,
+        "associativity": 4,
+        "replacement_policy": "RANDOM",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 400,
+      "trace_id": "c65129490cb40c89cc13cd341325323702e075f6d302cff28b07daedc025421a",
+      "cache_config": {
+        "cache_size_bytes": 16384,
+        "associativity": 1,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 400,
+      "trace_id": "c65129490cb40c89cc13cd341325323702e075f6d302cff28b07daedc025421a",
+      "cache_config": {
+        "cache_size_bytes": 16384,
+        "associativity": 2,
+        "replacement_policy": "FIFO",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 400,
+      "trace_id": "c65129490cb40c89cc13cd341325323702e075f6d302cff28b07daedc025421a",
+      "cache_config": {
+        "cache_size_bytes": 16384,
+        "associativity": 4,
+        "replacement_policy": "RANDOM",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 400,
+      "trace_id": "c65129490cb40c89cc13cd341325323702e075f6d302cff28b07daedc025421a",
+      "cache_config": {
+        "cache_size_bytes": 32768,
+        "associativity": 1,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 400,
+      "trace_id": "c65129490cb40c89cc13cd341325323702e075f6d302cff28b07daedc025421a",
+      "cache_config": {
+        "cache_size_bytes": 32768,
+        "associativity": 2,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 400,
+      "trace_id": "c65129490cb40c89cc13cd341325323702e075f6d302cff28b07daedc025421a",
+      "cache_config": {
+        "cache_size_bytes": 32768,
+        "associativity": 4,
+        "replacement_policy": "FIFO",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 400,
+      "trace_id": "c65129490cb40c89cc13cd341325323702e075f6d302cff28b07daedc025421a",
+      "cache_config": {
+        "cache_size_bytes": 8192,
+        "associativity": 4,
+        "replacement_policy": "FIFO",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 400,
+      "trace_id": "c65129490cb40c89cc13cd341325323702e075f6d302cff28b07daedc025421a",
+      "cache_config": {
+        "cache_size_bytes": 4096,
+        "associativity": 4,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 400,
+      "trace_id": "c65129490cb40c89cc13cd341325323702e075f6d302cff28b07daedc025421a",
+      "cache_config": {
+        "cache_size_bytes": 16384,
+        "associativity": 4,
+        "replacement_policy": "RANDOM",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 400,
+      "trace_id": "c65129490cb40c89cc13cd341325323702e075f6d302cff28b07daedc025421a",
+      "cache_config": {
+        "cache_size_bytes": 8192,
+        "associativity": 4,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 400,
+      "trace_id": "c65129490cb40c89cc13cd341325323702e075f6d302cff28b07daedc025421a",
+      "cache_config": {
+        "cache_size_bytes": 32768,
+        "associativity": 4,
+        "replacement_policy": "FIFO",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 400,
+      "trace_id": "c65129490cb40c89cc13cd341325323702e075f6d302cff28b07daedc025421a",
+      "cache_config": {
+        "cache_size_bytes": 4096,
+        "associativity": 1,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 400,
+      "trace_id": "c65129490cb40c89cc13cd341325323702e075f6d302cff28b07daedc025421a",
+      "cache_config": {
+        "cache_size_bytes": 32768,
+        "associativity": 4,
+        "replacement_policy": "RANDOM",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 400,
+      "trace_id": "c65129490cb40c89cc13cd341325323702e075f6d302cff28b07daedc025421a",
+      "cache_config": {
+        "cache_size_bytes": 16384,
+        "associativity": 2,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 400,
+      "trace_id": "c65129490cb40c89cc13cd341325323702e075f6d302cff28b07daedc025421a",
+      "cache_config": {
+        "cache_size_bytes": 32768,
+        "associativity": 2,
+        "replacement_policy": "FIFO",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 400,
+      "trace_id": "c65129490cb40c89cc13cd341325323702e075f6d302cff28b07daedc025421a",
+      "cache_config": {
+        "cache_size_bytes": 4096,
+        "associativity": 2,
+        "replacement_policy": "FIFO",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 400,
+      "trace_id": "c65129490cb40c89cc13cd341325323702e075f6d302cff28b07daedc025421a",
+      "cache_config": {
+        "cache_size_bytes": 32768,
+        "associativity": 2,
+        "replacement_policy": "RANDOM",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 400,
+      "trace_id": "c65129490cb40c89cc13cd341325323702e075f6d302cff28b07daedc025421a",
+      "cache_config": {
+        "cache_size_bytes": 8192,
+        "associativity": 2,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 400,
+      "trace_id": "c65129490cb40c89cc13cd341325323702e075f6d302cff28b07daedc025421a",
+      "cache_config": {
+        "cache_size_bytes": 32768,
+        "associativity": 2,
+        "replacement_policy": "RANDOM",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "transformer",
+      "seed": 400,
+      "trace_id": "c65129490cb40c89cc13cd341325323702e075f6d302cff28b07daedc025421a",
+      "cache_config": {
+        "cache_size_bytes": 8192,
+        "associativity": 1,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 42,
+      "trace_id": "f8be3c882b1f92122e88c6aebd62e860ac6bdaf81dc13710c65716ee52c12b4d",
+      "cache_config": {
+        "cache_size_bytes": 4096,
+        "associativity": 1,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 42,
+      "trace_id": "f8be3c882b1f92122e88c6aebd62e860ac6bdaf81dc13710c65716ee52c12b4d",
+      "cache_config": {
+        "cache_size_bytes": 4096,
+        "associativity": 2,
+        "replacement_policy": "RANDOM",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 42,
+      "trace_id": "f8be3c882b1f92122e88c6aebd62e860ac6bdaf81dc13710c65716ee52c12b4d",
+      "cache_config": {
+        "cache_size_bytes": 4096,
+        "associativity": 4,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 42,
+      "trace_id": "f8be3c882b1f92122e88c6aebd62e860ac6bdaf81dc13710c65716ee52c12b4d",
+      "cache_config": {
+        "cache_size_bytes": 8192,
+        "associativity": 1,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 42,
+      "trace_id": "f8be3c882b1f92122e88c6aebd62e860ac6bdaf81dc13710c65716ee52c12b4d",
+      "cache_config": {
+        "cache_size_bytes": 8192,
+        "associativity": 2,
+        "replacement_policy": "FIFO",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 42,
+      "trace_id": "f8be3c882b1f92122e88c6aebd62e860ac6bdaf81dc13710c65716ee52c12b4d",
+      "cache_config": {
+        "cache_size_bytes": 8192,
+        "associativity": 4,
+        "replacement_policy": "RANDOM",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 42,
+      "trace_id": "f8be3c882b1f92122e88c6aebd62e860ac6bdaf81dc13710c65716ee52c12b4d",
+      "cache_config": {
+        "cache_size_bytes": 16384,
+        "associativity": 1,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 42,
+      "trace_id": "f8be3c882b1f92122e88c6aebd62e860ac6bdaf81dc13710c65716ee52c12b4d",
+      "cache_config": {
+        "cache_size_bytes": 16384,
+        "associativity": 2,
+        "replacement_policy": "FIFO",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 42,
+      "trace_id": "f8be3c882b1f92122e88c6aebd62e860ac6bdaf81dc13710c65716ee52c12b4d",
+      "cache_config": {
+        "cache_size_bytes": 16384,
+        "associativity": 4,
+        "replacement_policy": "RANDOM",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 42,
+      "trace_id": "f8be3c882b1f92122e88c6aebd62e860ac6bdaf81dc13710c65716ee52c12b4d",
+      "cache_config": {
+        "cache_size_bytes": 32768,
+        "associativity": 1,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 42,
+      "trace_id": "f8be3c882b1f92122e88c6aebd62e860ac6bdaf81dc13710c65716ee52c12b4d",
+      "cache_config": {
+        "cache_size_bytes": 32768,
+        "associativity": 2,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 42,
+      "trace_id": "f8be3c882b1f92122e88c6aebd62e860ac6bdaf81dc13710c65716ee52c12b4d",
+      "cache_config": {
+        "cache_size_bytes": 32768,
+        "associativity": 4,
+        "replacement_policy": "FIFO",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 42,
+      "trace_id": "f8be3c882b1f92122e88c6aebd62e860ac6bdaf81dc13710c65716ee52c12b4d",
+      "cache_config": {
+        "cache_size_bytes": 8192,
+        "associativity": 2,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 42,
+      "trace_id": "f8be3c882b1f92122e88c6aebd62e860ac6bdaf81dc13710c65716ee52c12b4d",
+      "cache_config": {
+        "cache_size_bytes": 8192,
+        "associativity": 2,
+        "replacement_policy": "RANDOM",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 42,
+      "trace_id": "f8be3c882b1f92122e88c6aebd62e860ac6bdaf81dc13710c65716ee52c12b4d",
+      "cache_config": {
+        "cache_size_bytes": 32768,
+        "associativity": 4,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 42,
+      "trace_id": "f8be3c882b1f92122e88c6aebd62e860ac6bdaf81dc13710c65716ee52c12b4d",
+      "cache_config": {
+        "cache_size_bytes": 16384,
+        "associativity": 4,
+        "replacement_policy": "FIFO",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 42,
+      "trace_id": "f8be3c882b1f92122e88c6aebd62e860ac6bdaf81dc13710c65716ee52c12b4d",
+      "cache_config": {
+        "cache_size_bytes": 16384,
+        "associativity": 2,
+        "replacement_policy": "FIFO",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 42,
+      "trace_id": "f8be3c882b1f92122e88c6aebd62e860ac6bdaf81dc13710c65716ee52c12b4d",
+      "cache_config": {
+        "cache_size_bytes": 8192,
+        "associativity": 2,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 42,
+      "trace_id": "f8be3c882b1f92122e88c6aebd62e860ac6bdaf81dc13710c65716ee52c12b4d",
+      "cache_config": {
+        "cache_size_bytes": 4096,
+        "associativity": 1,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 42,
+      "trace_id": "f8be3c882b1f92122e88c6aebd62e860ac6bdaf81dc13710c65716ee52c12b4d",
+      "cache_config": {
+        "cache_size_bytes": 32768,
+        "associativity": 2,
+        "replacement_policy": "RANDOM",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 42,
+      "trace_id": "f8be3c882b1f92122e88c6aebd62e860ac6bdaf81dc13710c65716ee52c12b4d",
+      "cache_config": {
+        "cache_size_bytes": 16384,
+        "associativity": 2,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 42,
+      "trace_id": "f8be3c882b1f92122e88c6aebd62e860ac6bdaf81dc13710c65716ee52c12b4d",
+      "cache_config": {
+        "cache_size_bytes": 8192,
+        "associativity": 2,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 42,
+      "trace_id": "f8be3c882b1f92122e88c6aebd62e860ac6bdaf81dc13710c65716ee52c12b4d",
+      "cache_config": {
+        "cache_size_bytes": 8192,
+        "associativity": 2,
+        "replacement_policy": "RANDOM",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 42,
+      "trace_id": "f8be3c882b1f92122e88c6aebd62e860ac6bdaf81dc13710c65716ee52c12b4d",
+      "cache_config": {
+        "cache_size_bytes": 8192,
+        "associativity": 4,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 42,
+      "trace_id": "f8be3c882b1f92122e88c6aebd62e860ac6bdaf81dc13710c65716ee52c12b4d",
+      "cache_config": {
+        "cache_size_bytes": 16384,
+        "associativity": 1,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 42,
+      "trace_id": "f8be3c882b1f92122e88c6aebd62e860ac6bdaf81dc13710c65716ee52c12b4d",
+      "cache_config": {
+        "cache_size_bytes": 8192,
+        "associativity": 4,
+        "replacement_policy": "FIFO",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 42,
+      "trace_id": "f8be3c882b1f92122e88c6aebd62e860ac6bdaf81dc13710c65716ee52c12b4d",
+      "cache_config": {
+        "cache_size_bytes": 32768,
+        "associativity": 4,
+        "replacement_policy": "RANDOM",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 100,
+      "trace_id": "b510766700602b8ff4bd3e4d8ea5798db25e6f482fbf8fa341337df5b64a19e3",
+      "cache_config": {
+        "cache_size_bytes": 4096,
+        "associativity": 1,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 100,
+      "trace_id": "b510766700602b8ff4bd3e4d8ea5798db25e6f482fbf8fa341337df5b64a19e3",
+      "cache_config": {
+        "cache_size_bytes": 4096,
+        "associativity": 2,
+        "replacement_policy": "RANDOM",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 100,
+      "trace_id": "b510766700602b8ff4bd3e4d8ea5798db25e6f482fbf8fa341337df5b64a19e3",
+      "cache_config": {
+        "cache_size_bytes": 4096,
+        "associativity": 4,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 100,
+      "trace_id": "b510766700602b8ff4bd3e4d8ea5798db25e6f482fbf8fa341337df5b64a19e3",
+      "cache_config": {
+        "cache_size_bytes": 8192,
+        "associativity": 1,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 100,
+      "trace_id": "b510766700602b8ff4bd3e4d8ea5798db25e6f482fbf8fa341337df5b64a19e3",
+      "cache_config": {
+        "cache_size_bytes": 8192,
+        "associativity": 2,
+        "replacement_policy": "FIFO",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 100,
+      "trace_id": "b510766700602b8ff4bd3e4d8ea5798db25e6f482fbf8fa341337df5b64a19e3",
+      "cache_config": {
+        "cache_size_bytes": 8192,
+        "associativity": 4,
+        "replacement_policy": "RANDOM",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 100,
+      "trace_id": "b510766700602b8ff4bd3e4d8ea5798db25e6f482fbf8fa341337df5b64a19e3",
+      "cache_config": {
+        "cache_size_bytes": 16384,
+        "associativity": 1,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 100,
+      "trace_id": "b510766700602b8ff4bd3e4d8ea5798db25e6f482fbf8fa341337df5b64a19e3",
+      "cache_config": {
+        "cache_size_bytes": 16384,
+        "associativity": 2,
+        "replacement_policy": "FIFO",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 100,
+      "trace_id": "b510766700602b8ff4bd3e4d8ea5798db25e6f482fbf8fa341337df5b64a19e3",
+      "cache_config": {
+        "cache_size_bytes": 16384,
+        "associativity": 4,
+        "replacement_policy": "RANDOM",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 100,
+      "trace_id": "b510766700602b8ff4bd3e4d8ea5798db25e6f482fbf8fa341337df5b64a19e3",
+      "cache_config": {
+        "cache_size_bytes": 32768,
+        "associativity": 1,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 100,
+      "trace_id": "b510766700602b8ff4bd3e4d8ea5798db25e6f482fbf8fa341337df5b64a19e3",
+      "cache_config": {
+        "cache_size_bytes": 32768,
+        "associativity": 2,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 100,
+      "trace_id": "b510766700602b8ff4bd3e4d8ea5798db25e6f482fbf8fa341337df5b64a19e3",
+      "cache_config": {
+        "cache_size_bytes": 32768,
+        "associativity": 4,
+        "replacement_policy": "FIFO",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 100,
+      "trace_id": "b510766700602b8ff4bd3e4d8ea5798db25e6f482fbf8fa341337df5b64a19e3",
+      "cache_config": {
+        "cache_size_bytes": 32768,
+        "associativity": 2,
+        "replacement_policy": "FIFO",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 100,
+      "trace_id": "b510766700602b8ff4bd3e4d8ea5798db25e6f482fbf8fa341337df5b64a19e3",
+      "cache_config": {
+        "cache_size_bytes": 4096,
+        "associativity": 4,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 100,
+      "trace_id": "b510766700602b8ff4bd3e4d8ea5798db25e6f482fbf8fa341337df5b64a19e3",
+      "cache_config": {
+        "cache_size_bytes": 32768,
+        "associativity": 4,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 100,
+      "trace_id": "b510766700602b8ff4bd3e4d8ea5798db25e6f482fbf8fa341337df5b64a19e3",
+      "cache_config": {
+        "cache_size_bytes": 8192,
+        "associativity": 4,
+        "replacement_policy": "FIFO",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 100,
+      "trace_id": "b510766700602b8ff4bd3e4d8ea5798db25e6f482fbf8fa341337df5b64a19e3",
+      "cache_config": {
+        "cache_size_bytes": 4096,
+        "associativity": 2,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 100,
+      "trace_id": "b510766700602b8ff4bd3e4d8ea5798db25e6f482fbf8fa341337df5b64a19e3",
+      "cache_config": {
+        "cache_size_bytes": 4096,
+        "associativity": 4,
+        "replacement_policy": "FIFO",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 100,
+      "trace_id": "b510766700602b8ff4bd3e4d8ea5798db25e6f482fbf8fa341337df5b64a19e3",
+      "cache_config": {
+        "cache_size_bytes": 16384,
+        "associativity": 2,
+        "replacement_policy": "FIFO",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 100,
+      "trace_id": "b510766700602b8ff4bd3e4d8ea5798db25e6f482fbf8fa341337df5b64a19e3",
+      "cache_config": {
+        "cache_size_bytes": 16384,
+        "associativity": 2,
+        "replacement_policy": "RANDOM",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 100,
+      "trace_id": "b510766700602b8ff4bd3e4d8ea5798db25e6f482fbf8fa341337df5b64a19e3",
+      "cache_config": {
+        "cache_size_bytes": 8192,
+        "associativity": 1,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 100,
+      "trace_id": "b510766700602b8ff4bd3e4d8ea5798db25e6f482fbf8fa341337df5b64a19e3",
+      "cache_config": {
+        "cache_size_bytes": 16384,
+        "associativity": 2,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 100,
+      "trace_id": "b510766700602b8ff4bd3e4d8ea5798db25e6f482fbf8fa341337df5b64a19e3",
+      "cache_config": {
+        "cache_size_bytes": 16384,
+        "associativity": 2,
+        "replacement_policy": "RANDOM",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 100,
+      "trace_id": "b510766700602b8ff4bd3e4d8ea5798db25e6f482fbf8fa341337df5b64a19e3",
+      "cache_config": {
+        "cache_size_bytes": 16384,
+        "associativity": 4,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 100,
+      "trace_id": "b510766700602b8ff4bd3e4d8ea5798db25e6f482fbf8fa341337df5b64a19e3",
+      "cache_config": {
+        "cache_size_bytes": 4096,
+        "associativity": 2,
+        "replacement_policy": "FIFO",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 100,
+      "trace_id": "b510766700602b8ff4bd3e4d8ea5798db25e6f482fbf8fa341337df5b64a19e3",
+      "cache_config": {
+        "cache_size_bytes": 16384,
+        "associativity": 4,
+        "replacement_policy": "FIFO",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 100,
+      "trace_id": "b510766700602b8ff4bd3e4d8ea5798db25e6f482fbf8fa341337df5b64a19e3",
+      "cache_config": {
+        "cache_size_bytes": 16384,
+        "associativity": 4,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 200,
+      "trace_id": "be77cc8f759632f20fea517a927a1fa78af47ded975edf5ef748a8ab6ec93491",
+      "cache_config": {
+        "cache_size_bytes": 4096,
+        "associativity": 1,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 200,
+      "trace_id": "be77cc8f759632f20fea517a927a1fa78af47ded975edf5ef748a8ab6ec93491",
+      "cache_config": {
+        "cache_size_bytes": 4096,
+        "associativity": 2,
+        "replacement_policy": "RANDOM",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 200,
+      "trace_id": "be77cc8f759632f20fea517a927a1fa78af47ded975edf5ef748a8ab6ec93491",
+      "cache_config": {
+        "cache_size_bytes": 4096,
+        "associativity": 4,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 200,
+      "trace_id": "be77cc8f759632f20fea517a927a1fa78af47ded975edf5ef748a8ab6ec93491",
+      "cache_config": {
+        "cache_size_bytes": 8192,
+        "associativity": 1,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 200,
+      "trace_id": "be77cc8f759632f20fea517a927a1fa78af47ded975edf5ef748a8ab6ec93491",
+      "cache_config": {
+        "cache_size_bytes": 8192,
+        "associativity": 2,
+        "replacement_policy": "FIFO",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 200,
+      "trace_id": "be77cc8f759632f20fea517a927a1fa78af47ded975edf5ef748a8ab6ec93491",
+      "cache_config": {
+        "cache_size_bytes": 8192,
+        "associativity": 4,
+        "replacement_policy": "RANDOM",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 200,
+      "trace_id": "be77cc8f759632f20fea517a927a1fa78af47ded975edf5ef748a8ab6ec93491",
+      "cache_config": {
+        "cache_size_bytes": 16384,
+        "associativity": 1,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 200,
+      "trace_id": "be77cc8f759632f20fea517a927a1fa78af47ded975edf5ef748a8ab6ec93491",
+      "cache_config": {
+        "cache_size_bytes": 16384,
+        "associativity": 2,
+        "replacement_policy": "FIFO",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 200,
+      "trace_id": "be77cc8f759632f20fea517a927a1fa78af47ded975edf5ef748a8ab6ec93491",
+      "cache_config": {
+        "cache_size_bytes": 16384,
+        "associativity": 4,
+        "replacement_policy": "RANDOM",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 200,
+      "trace_id": "be77cc8f759632f20fea517a927a1fa78af47ded975edf5ef748a8ab6ec93491",
+      "cache_config": {
+        "cache_size_bytes": 32768,
+        "associativity": 1,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 200,
+      "trace_id": "be77cc8f759632f20fea517a927a1fa78af47ded975edf5ef748a8ab6ec93491",
+      "cache_config": {
+        "cache_size_bytes": 32768,
+        "associativity": 2,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 200,
+      "trace_id": "be77cc8f759632f20fea517a927a1fa78af47ded975edf5ef748a8ab6ec93491",
+      "cache_config": {
+        "cache_size_bytes": 32768,
+        "associativity": 4,
+        "replacement_policy": "FIFO",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 200,
+      "trace_id": "be77cc8f759632f20fea517a927a1fa78af47ded975edf5ef748a8ab6ec93491",
+      "cache_config": {
+        "cache_size_bytes": 16384,
+        "associativity": 4,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 200,
+      "trace_id": "be77cc8f759632f20fea517a927a1fa78af47ded975edf5ef748a8ab6ec93491",
+      "cache_config": {
+        "cache_size_bytes": 4096,
+        "associativity": 2,
+        "replacement_policy": "FIFO",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 200,
+      "trace_id": "be77cc8f759632f20fea517a927a1fa78af47ded975edf5ef748a8ab6ec93491",
+      "cache_config": {
+        "cache_size_bytes": 8192,
+        "associativity": 4,
+        "replacement_policy": "RANDOM",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 200,
+      "trace_id": "be77cc8f759632f20fea517a927a1fa78af47ded975edf5ef748a8ab6ec93491",
+      "cache_config": {
+        "cache_size_bytes": 4096,
+        "associativity": 4,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 200,
+      "trace_id": "be77cc8f759632f20fea517a927a1fa78af47ded975edf5ef748a8ab6ec93491",
+      "cache_config": {
+        "cache_size_bytes": 32768,
+        "associativity": 2,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 200,
+      "trace_id": "be77cc8f759632f20fea517a927a1fa78af47ded975edf5ef748a8ab6ec93491",
+      "cache_config": {
+        "cache_size_bytes": 32768,
+        "associativity": 2,
+        "replacement_policy": "RANDOM",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 200,
+      "trace_id": "be77cc8f759632f20fea517a927a1fa78af47ded975edf5ef748a8ab6ec93491",
+      "cache_config": {
+        "cache_size_bytes": 8192,
+        "associativity": 4,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 200,
+      "trace_id": "be77cc8f759632f20fea517a927a1fa78af47ded975edf5ef748a8ab6ec93491",
+      "cache_config": {
+        "cache_size_bytes": 32768,
+        "associativity": 1,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 200,
+      "trace_id": "be77cc8f759632f20fea517a927a1fa78af47ded975edf5ef748a8ab6ec93491",
+      "cache_config": {
+        "cache_size_bytes": 8192,
+        "associativity": 2,
+        "replacement_policy": "RANDOM",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 200,
+      "trace_id": "be77cc8f759632f20fea517a927a1fa78af47ded975edf5ef748a8ab6ec93491",
+      "cache_config": {
+        "cache_size_bytes": 32768,
+        "associativity": 4,
+        "replacement_policy": "RANDOM",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 200,
+      "trace_id": "be77cc8f759632f20fea517a927a1fa78af47ded975edf5ef748a8ab6ec93491",
+      "cache_config": {
+        "cache_size_bytes": 32768,
+        "associativity": 1,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 200,
+      "trace_id": "be77cc8f759632f20fea517a927a1fa78af47ded975edf5ef748a8ab6ec93491",
+      "cache_config": {
+        "cache_size_bytes": 4096,
+        "associativity": 4,
+        "replacement_policy": "FIFO",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 200,
+      "trace_id": "be77cc8f759632f20fea517a927a1fa78af47ded975edf5ef748a8ab6ec93491",
+      "cache_config": {
+        "cache_size_bytes": 32768,
+        "associativity": 4,
+        "replacement_policy": "RANDOM",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 200,
+      "trace_id": "be77cc8f759632f20fea517a927a1fa78af47ded975edf5ef748a8ab6ec93491",
+      "cache_config": {
+        "cache_size_bytes": 8192,
+        "associativity": 2,
+        "replacement_policy": "FIFO",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 300,
+      "trace_id": "6911daef84888a7a47fc79ca6d5069d401a3a166c44f2c8c620b42d3fcf1d9de",
+      "cache_config": {
+        "cache_size_bytes": 4096,
+        "associativity": 1,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 300,
+      "trace_id": "6911daef84888a7a47fc79ca6d5069d401a3a166c44f2c8c620b42d3fcf1d9de",
+      "cache_config": {
+        "cache_size_bytes": 4096,
+        "associativity": 2,
+        "replacement_policy": "RANDOM",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 300,
+      "trace_id": "6911daef84888a7a47fc79ca6d5069d401a3a166c44f2c8c620b42d3fcf1d9de",
+      "cache_config": {
+        "cache_size_bytes": 4096,
+        "associativity": 4,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 300,
+      "trace_id": "6911daef84888a7a47fc79ca6d5069d401a3a166c44f2c8c620b42d3fcf1d9de",
+      "cache_config": {
+        "cache_size_bytes": 8192,
+        "associativity": 1,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 300,
+      "trace_id": "6911daef84888a7a47fc79ca6d5069d401a3a166c44f2c8c620b42d3fcf1d9de",
+      "cache_config": {
+        "cache_size_bytes": 8192,
+        "associativity": 2,
+        "replacement_policy": "FIFO",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 300,
+      "trace_id": "6911daef84888a7a47fc79ca6d5069d401a3a166c44f2c8c620b42d3fcf1d9de",
+      "cache_config": {
+        "cache_size_bytes": 8192,
+        "associativity": 4,
+        "replacement_policy": "RANDOM",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 300,
+      "trace_id": "6911daef84888a7a47fc79ca6d5069d401a3a166c44f2c8c620b42d3fcf1d9de",
+      "cache_config": {
+        "cache_size_bytes": 16384,
+        "associativity": 1,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 300,
+      "trace_id": "6911daef84888a7a47fc79ca6d5069d401a3a166c44f2c8c620b42d3fcf1d9de",
+      "cache_config": {
+        "cache_size_bytes": 16384,
+        "associativity": 2,
+        "replacement_policy": "FIFO",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 300,
+      "trace_id": "6911daef84888a7a47fc79ca6d5069d401a3a166c44f2c8c620b42d3fcf1d9de",
+      "cache_config": {
+        "cache_size_bytes": 16384,
+        "associativity": 4,
+        "replacement_policy": "RANDOM",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 300,
+      "trace_id": "6911daef84888a7a47fc79ca6d5069d401a3a166c44f2c8c620b42d3fcf1d9de",
+      "cache_config": {
+        "cache_size_bytes": 32768,
+        "associativity": 1,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 300,
+      "trace_id": "6911daef84888a7a47fc79ca6d5069d401a3a166c44f2c8c620b42d3fcf1d9de",
+      "cache_config": {
+        "cache_size_bytes": 32768,
+        "associativity": 2,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 300,
+      "trace_id": "6911daef84888a7a47fc79ca6d5069d401a3a166c44f2c8c620b42d3fcf1d9de",
+      "cache_config": {
+        "cache_size_bytes": 32768,
+        "associativity": 4,
+        "replacement_policy": "FIFO",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 300,
+      "trace_id": "6911daef84888a7a47fc79ca6d5069d401a3a166c44f2c8c620b42d3fcf1d9de",
+      "cache_config": {
+        "cache_size_bytes": 8192,
+        "associativity": 4,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 300,
+      "trace_id": "6911daef84888a7a47fc79ca6d5069d401a3a166c44f2c8c620b42d3fcf1d9de",
+      "cache_config": {
+        "cache_size_bytes": 16384,
+        "associativity": 4,
+        "replacement_policy": "FIFO",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 300,
+      "trace_id": "6911daef84888a7a47fc79ca6d5069d401a3a166c44f2c8c620b42d3fcf1d9de",
+      "cache_config": {
+        "cache_size_bytes": 8192,
+        "associativity": 4,
+        "replacement_policy": "FIFO",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 300,
+      "trace_id": "6911daef84888a7a47fc79ca6d5069d401a3a166c44f2c8c620b42d3fcf1d9de",
+      "cache_config": {
+        "cache_size_bytes": 16384,
+        "associativity": 4,
+        "replacement_policy": "RANDOM",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 300,
+      "trace_id": "6911daef84888a7a47fc79ca6d5069d401a3a166c44f2c8c620b42d3fcf1d9de",
+      "cache_config": {
+        "cache_size_bytes": 16384,
+        "associativity": 4,
+        "replacement_policy": "RANDOM",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 300,
+      "trace_id": "6911daef84888a7a47fc79ca6d5069d401a3a166c44f2c8c620b42d3fcf1d9de",
+      "cache_config": {
+        "cache_size_bytes": 4096,
+        "associativity": 4,
+        "replacement_policy": "FIFO",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 300,
+      "trace_id": "6911daef84888a7a47fc79ca6d5069d401a3a166c44f2c8c620b42d3fcf1d9de",
+      "cache_config": {
+        "cache_size_bytes": 16384,
+        "associativity": 2,
+        "replacement_policy": "RANDOM",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 300,
+      "trace_id": "6911daef84888a7a47fc79ca6d5069d401a3a166c44f2c8c620b42d3fcf1d9de",
+      "cache_config": {
+        "cache_size_bytes": 32768,
+        "associativity": 2,
+        "replacement_policy": "RANDOM",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 300,
+      "trace_id": "6911daef84888a7a47fc79ca6d5069d401a3a166c44f2c8c620b42d3fcf1d9de",
+      "cache_config": {
+        "cache_size_bytes": 4096,
+        "associativity": 2,
+        "replacement_policy": "RANDOM",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 300,
+      "trace_id": "6911daef84888a7a47fc79ca6d5069d401a3a166c44f2c8c620b42d3fcf1d9de",
+      "cache_config": {
+        "cache_size_bytes": 8192,
+        "associativity": 2,
+        "replacement_policy": "FIFO",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 300,
+      "trace_id": "6911daef84888a7a47fc79ca6d5069d401a3a166c44f2c8c620b42d3fcf1d9de",
+      "cache_config": {
+        "cache_size_bytes": 8192,
+        "associativity": 1,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 300,
+      "trace_id": "6911daef84888a7a47fc79ca6d5069d401a3a166c44f2c8c620b42d3fcf1d9de",
+      "cache_config": {
+        "cache_size_bytes": 4096,
+        "associativity": 2,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 300,
+      "trace_id": "6911daef84888a7a47fc79ca6d5069d401a3a166c44f2c8c620b42d3fcf1d9de",
+      "cache_config": {
+        "cache_size_bytes": 4096,
+        "associativity": 2,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 300,
+      "trace_id": "6911daef84888a7a47fc79ca6d5069d401a3a166c44f2c8c620b42d3fcf1d9de",
+      "cache_config": {
+        "cache_size_bytes": 4096,
+        "associativity": 4,
+        "replacement_policy": "RANDOM",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 400,
+      "trace_id": "d68344edeff614477ba7bddf25fbbe7df4af6e814afac38e66b1c7503292374d",
+      "cache_config": {
+        "cache_size_bytes": 4096,
+        "associativity": 1,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 400,
+      "trace_id": "d68344edeff614477ba7bddf25fbbe7df4af6e814afac38e66b1c7503292374d",
+      "cache_config": {
+        "cache_size_bytes": 4096,
+        "associativity": 2,
+        "replacement_policy": "RANDOM",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 400,
+      "trace_id": "d68344edeff614477ba7bddf25fbbe7df4af6e814afac38e66b1c7503292374d",
+      "cache_config": {
+        "cache_size_bytes": 4096,
+        "associativity": 4,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 400,
+      "trace_id": "d68344edeff614477ba7bddf25fbbe7df4af6e814afac38e66b1c7503292374d",
+      "cache_config": {
+        "cache_size_bytes": 8192,
+        "associativity": 1,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 400,
+      "trace_id": "d68344edeff614477ba7bddf25fbbe7df4af6e814afac38e66b1c7503292374d",
+      "cache_config": {
+        "cache_size_bytes": 8192,
+        "associativity": 2,
+        "replacement_policy": "FIFO",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 400,
+      "trace_id": "d68344edeff614477ba7bddf25fbbe7df4af6e814afac38e66b1c7503292374d",
+      "cache_config": {
+        "cache_size_bytes": 8192,
+        "associativity": 4,
+        "replacement_policy": "RANDOM",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 400,
+      "trace_id": "d68344edeff614477ba7bddf25fbbe7df4af6e814afac38e66b1c7503292374d",
+      "cache_config": {
+        "cache_size_bytes": 16384,
+        "associativity": 1,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 400,
+      "trace_id": "d68344edeff614477ba7bddf25fbbe7df4af6e814afac38e66b1c7503292374d",
+      "cache_config": {
+        "cache_size_bytes": 16384,
+        "associativity": 2,
+        "replacement_policy": "FIFO",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 400,
+      "trace_id": "d68344edeff614477ba7bddf25fbbe7df4af6e814afac38e66b1c7503292374d",
+      "cache_config": {
+        "cache_size_bytes": 16384,
+        "associativity": 4,
+        "replacement_policy": "RANDOM",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 400,
+      "trace_id": "d68344edeff614477ba7bddf25fbbe7df4af6e814afac38e66b1c7503292374d",
+      "cache_config": {
+        "cache_size_bytes": 32768,
+        "associativity": 1,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 400,
+      "trace_id": "d68344edeff614477ba7bddf25fbbe7df4af6e814afac38e66b1c7503292374d",
+      "cache_config": {
+        "cache_size_bytes": 32768,
+        "associativity": 2,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 400,
+      "trace_id": "d68344edeff614477ba7bddf25fbbe7df4af6e814afac38e66b1c7503292374d",
+      "cache_config": {
+        "cache_size_bytes": 32768,
+        "associativity": 4,
+        "replacement_policy": "FIFO",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 400,
+      "trace_id": "d68344edeff614477ba7bddf25fbbe7df4af6e814afac38e66b1c7503292374d",
+      "cache_config": {
+        "cache_size_bytes": 32768,
+        "associativity": 2,
+        "replacement_policy": "FIFO",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 400,
+      "trace_id": "d68344edeff614477ba7bddf25fbbe7df4af6e814afac38e66b1c7503292374d",
+      "cache_config": {
+        "cache_size_bytes": 4096,
+        "associativity": 2,
+        "replacement_policy": "RANDOM",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 400,
+      "trace_id": "d68344edeff614477ba7bddf25fbbe7df4af6e814afac38e66b1c7503292374d",
+      "cache_config": {
+        "cache_size_bytes": 4096,
+        "associativity": 2,
+        "replacement_policy": "FIFO",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 400,
+      "trace_id": "d68344edeff614477ba7bddf25fbbe7df4af6e814afac38e66b1c7503292374d",
+      "cache_config": {
+        "cache_size_bytes": 8192,
+        "associativity": 4,
+        "replacement_policy": "RANDOM",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 400,
+      "trace_id": "d68344edeff614477ba7bddf25fbbe7df4af6e814afac38e66b1c7503292374d",
+      "cache_config": {
+        "cache_size_bytes": 32768,
+        "associativity": 2,
+        "replacement_policy": "FIFO",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 400,
+      "trace_id": "d68344edeff614477ba7bddf25fbbe7df4af6e814afac38e66b1c7503292374d",
+      "cache_config": {
+        "cache_size_bytes": 4096,
+        "associativity": 4,
+        "replacement_policy": "RANDOM",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 400,
+      "trace_id": "d68344edeff614477ba7bddf25fbbe7df4af6e814afac38e66b1c7503292374d",
+      "cache_config": {
+        "cache_size_bytes": 4096,
+        "associativity": 4,
+        "replacement_policy": "RANDOM",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 400,
+      "trace_id": "d68344edeff614477ba7bddf25fbbe7df4af6e814afac38e66b1c7503292374d",
+      "cache_config": {
+        "cache_size_bytes": 32768,
+        "associativity": 2,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 400,
+      "trace_id": "d68344edeff614477ba7bddf25fbbe7df4af6e814afac38e66b1c7503292374d",
+      "cache_config": {
+        "cache_size_bytes": 32768,
+        "associativity": 4,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 64
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 400,
+      "trace_id": "d68344edeff614477ba7bddf25fbbe7df4af6e814afac38e66b1c7503292374d",
+      "cache_config": {
+        "cache_size_bytes": 32768,
+        "associativity": 4,
+        "replacement_policy": "FIFO",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 400,
+      "trace_id": "d68344edeff614477ba7bddf25fbbe7df4af6e814afac38e66b1c7503292374d",
+      "cache_config": {
+        "cache_size_bytes": 16384,
+        "associativity": 2,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 400,
+      "trace_id": "d68344edeff614477ba7bddf25fbbe7df4af6e814afac38e66b1c7503292374d",
+      "cache_config": {
+        "cache_size_bytes": 4096,
+        "associativity": 1,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 32
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 400,
+      "trace_id": "d68344edeff614477ba7bddf25fbbe7df4af6e814afac38e66b1c7503292374d",
+      "cache_config": {
+        "cache_size_bytes": 16384,
+        "associativity": 1,
+        "replacement_policy": "LRU",
+        "block_size_bytes": 128
+      }
+    },
+    {
+      "workload_type": "matmul",
+      "seed": 400,
+      "trace_id": "d68344edeff614477ba7bddf25fbbe7df4af6e814afac38e66b1c7503292374d",
+      "cache_config": {
+        "cache_size_bytes": 32768,
+        "associativity": 4,
+        "replacement_policy": "FIFO",
+        "block_size_bytes": 128
+      }
+    }
+  ]
+}

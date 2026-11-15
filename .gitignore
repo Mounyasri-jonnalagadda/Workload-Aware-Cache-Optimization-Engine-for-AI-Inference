@@ -1,0 +1,50 @@
+﻿# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+
+# Vivado temporary files
+.Xil/
+xsim.dir/
+*.jou
+*.log
+*.wdb
+*.pb
+*.str
+*.bit
+*.ltx
+*.dcp
+
+# Python testing and cache
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Generated simulation runs
+simulation_results/
+
+# Generated workload traces
+workloads/
+
+# Vivado generated output
+vivado_project/
+.cache/
+
+# Generated benchmark and simulation outputs
+results/
